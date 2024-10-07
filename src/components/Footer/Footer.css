@@ -1,0 +1,60 @@
+.footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem 2rem; /* Ajusta el padding aquí */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-top: 4px solid var(--text-color);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaciado entre los íconos */
+}
+
+.social-icons a {
+  color: var(--text-color);
+  margin-left: 10px;
+  font-size: 1.8rem; /* Aumenta el tamaño del ícono */
+  transition: color 0.3s ease; /* Suave transición al hover */
+}
+
+.social-icons a:hover {
+  color: #888; /* Cambia de color al hacer hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    margin-bottom: 1.5rem;
+  }
+}

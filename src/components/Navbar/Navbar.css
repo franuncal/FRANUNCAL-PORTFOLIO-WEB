@@ -1,0 +1,140 @@
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "akatab", sans-serif;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 0 1rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.social-icons-nav {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons-nav a {
+  margin: 0 0.5rem; /* Espacio entre los iconos sociales */
+  font-size: 1.5rem; /* Tamaño de los iconos */
+  color: var(--text-color); /* Color de los iconos */
+}
+
+/* Estilos del menú hamburguesa */
+.menu-toggle {
+  position: absolute;
+  left: 1rem;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav-list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-list li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-list li a {
+    font-size: 1.2rem; /* Ajustar tamaño del texto del menú */
+  }
+
+  .logo {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .social-icons-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex; /* Mostrar el botón del menú hamburguesa */
+  }
+}
+
+/* Estilos para el menú hamburguesa activo */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
