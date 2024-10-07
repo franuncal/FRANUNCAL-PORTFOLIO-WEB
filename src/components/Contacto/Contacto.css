@@ -1,7 +1,7 @@
 .contact-page {
   background-color: var(--text-color);
   color: #c4b9b9;
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
   margin-top: 100px;
   min-height: calc(100vh - 200px); /* Ajusta según la altura del footer */
   box-sizing: border-box;
@@ -25,8 +25,8 @@
 }
 
 .contact-info h2 {
-  color: rgb(8, 47, 60);
-  font-size: 2rem;
+  color: var(--bg-color);
+  font-size: 3.1rem;
   margin-bottom: 1rem;
 }
 
