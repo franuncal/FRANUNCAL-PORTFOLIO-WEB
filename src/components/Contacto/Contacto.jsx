@@ -12,7 +12,11 @@ export const Contacto = () => {
           </p>
         </div>
 
-        <form className="contact-form dark-form" action="#" method="POST">
+        <form
+          className="contact-form dark-form"
+          action="https://formsubmit.co/unquidev@gmail.com"
+          method="POST"
+        >
           <div className="form-group">
             <input
               type="text"
@@ -44,6 +48,17 @@ export const Contacto = () => {
             <span className="arrow">➔</span>
           </button>
         </form>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://franuncal.unquidev.com/"
+        ></input>
+        <input
+          type="hidden"
+          name="_subject"
+          value="¡Nuevo Contacto de la Web!"
+        ></input>
+        <input type="hidden" name="_captcha" value="false"></input>
       </div>
     </div>
   );
