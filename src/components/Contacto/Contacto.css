@@ -91,6 +91,16 @@
   color: #888;
 }
 
+.success-message {
+  color: green; /* Color para el mensaje de éxito */
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: red; /* Color para el mensaje de error */
+  margin-top: 1rem;
+}
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .contact-container {
