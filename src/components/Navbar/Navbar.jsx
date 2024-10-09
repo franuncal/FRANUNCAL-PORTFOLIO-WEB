@@ -17,9 +17,9 @@ const Navbar = () => {
 
   return (
     <header>
-      <p href="/" className="logo">
-        Fran Uncal
-      </p>
+      <a href="/" className="logo">
+        @franuncal
+      </a>
       <div
         className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
         onClick={toggleMenu}
@@ -31,8 +31,8 @@ const Navbar = () => {
       <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
         <ul className="nav-list">
           <li>
-            <a href="/" onClick={closeMenu}>
-              Inicio
+            <a className="inicio" href="/" onClick={closeMenu}>
+              Sobre Mi
             </a>
           </li>
 
