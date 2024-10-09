@@ -15,8 +15,8 @@ export const SobreMi = () => {
           <p>
             Soy Desarrollador Frontend con más de 3 años de experiencia creando
             sitios web para diversos clientes. A lo largo de mi carrera, he
-            adquirido habilidades técnicas sólidas en React JS y JavaScript, lo
-            que me permite enfrentar desafíos complejos y aportar soluciones
+            adquirido habilidades técnicas sólidas en React y JavaScript, lo que
+            me permite enfrentar desafíos complejos y aportar soluciones
             eficientes. Mi meta es seguir evolucionando en este rol, creando
             interfaces de usuario innovadoras y colaborando en equipos dinámicos
             para lograr resultados sobresalientes.
