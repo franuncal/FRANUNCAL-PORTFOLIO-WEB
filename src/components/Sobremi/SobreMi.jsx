@@ -1,7 +1,7 @@
 import "./SobreMi.css";
 import img from "../../assets/img/img4.png";
 // import img from "../../assets/img/img1.jpeg";
-import cv from "../../assets/pdf/cv.pdf";
+import cv from "../../assets/pdf/cv-uncal apraiz francisco.pdf";
 
 export const SobreMi = () => {
   return (
@@ -13,10 +13,10 @@ export const SobreMi = () => {
         <div className="text">
           <h2>Hola, soy Fran</h2>
           <p>
-            Soy Desarrollador Frontend con más de 3 años de experiencia creando
-            sitios web para diversos clientes. A lo largo de mi carrera, he
-            adquirido habilidades técnicas sólidas en React y JavaScript, lo que
-            me permite enfrentar desafíos complejos y aportar soluciones
+            Soy Programador Web con más de 3 años de experiencia creando sitios
+            web para diversos clientes. A lo largo de mi carrera, he adquirido
+            habilidades técnicas sólidas en React y JavaScript, lo que me
+            permite enfrentar desafíos complejos y aportar soluciones
             eficientes. Mi meta es seguir evolucionando en este rol, creando
             interfaces de usuario innovadoras y colaborando en equipos dinámicos
             para lograr resultados sobresalientes.
