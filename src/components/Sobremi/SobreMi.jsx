@@ -1,5 +1,6 @@
 import "./SobreMi.css";
 import img from "../../assets/img/img4.png";
+// import img from "../../assets/img/img4.jpeg";
 // import img from "../../assets/img/img1.jpeg";
 import cv from "../../assets/pdf/cv-uncal apraiz francisco.pdf";
 

@@ -58,7 +58,7 @@ export const Contacto = () => {
           name="_subject"
           value="¡Nuevo Contacto de la Web!"
         ></input>
-        <input type="hidden" name="_captcha" value="false"></input>
+        <input type="hidden" name="_captcha" value="false" />
       </div>
     </div>
   );
