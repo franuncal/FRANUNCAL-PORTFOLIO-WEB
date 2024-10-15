@@ -9,15 +9,16 @@
 
 .contact-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center; /* Centra el contenido en pantallas grandes */
+  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+  align-items: center; /* Centra horizontalmente */
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
 .contact-info {
-  text-align: center;
+  text-align: center; /* Alineación a centro para mayor uniformidad */
   margin-bottom: 2rem;
 }
 
@@ -37,29 +38,75 @@
 
 .social-icons {
   display: flex;
-  flex-direction: column; /* Mantener en columna para que los grupos estén uno debajo del otro */
-  align-items: flex-start; /* Alinear a la izquierda */
-  gap: 15px; /* Espaciado entre los íconos y las URLs */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .social-item {
   display: flex;
-  align-items: center; /* Centra verticalmente el icono y la descripción */
+  align-items: center;
+  margin-bottom: 1.2rem;
 }
 
 .social-item a {
-  color: var(--bg-color);
-  font-size: 2rem; /* Aumenta el tamaño del ícono */
+  display: flex; /* Asegura que el enlace sea un contenedor flex */
+  align-items: center; /* Centra verticalmente el icono y el texto */
+  text-decoration: none; /* Elimina el subrayado del texto */
+  color: var(--bg-color); /* Color del texto por defecto */
+  font-size: 2rem; /* Tamaño del ícono */
   transition: color 0.3s ease; /* Suave transición al hover */
-  margin-right: 10px; /* Espacio entre el icono y la URL */
+}
+
+.icon-instagram:hover {
+  color: #e1306c; /* Color original de Instagram */
+}
+
+.icon-whatsapp:hover {
+  color: #25d366; /* Color original de WhatsApp */
+}
+
+.icon-linkedin:hover {
+  color: #0077b5; /* Color original de LinkedIn */
+}
+
+.icon-email:hover {
+  color: #c32aa3; /* Color original del ícono de email (opcional) */
 }
 
 .social-item a:hover {
-  color: #888; /* Cambia de color al hacer hover */
+  transform: scale(1.1);
 }
 
-.social-item p {
-  margin: 0; /* Elimina el margen del párrafo para mejor alineación */
-  font-size: 1rem; /* Tamaño de fuente para la URL */
+.social-item span {
+  margin-left: 10px; /* Espacio entre el icono y el texto */
+  font-size: 1.2rem; /* Tamaño de fuente para la URL */
   color: #666; /* Color del texto de la URL */
+  vertical-align: middle; /* Alinea verticalmente con el icono */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra los elementos en la columna */
+  }
+
+  .contact-info {
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+    margin-bottom: 2rem; /* Espacio entre el texto y los iconos */
+  }
+
+  .social-icons {
+    align-items: flex-start; /* Centra horizontalmente los iconos y enlaces */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+  }
+
+  .social-item a {
+    font-size: 1.5rem; /* Tamaño de los iconos en móviles */
+  }
+
+  .social-item span {
+    font-size: 1rem; /* Tamaño de la URL en móviles */
+  }
 }

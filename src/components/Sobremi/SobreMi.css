@@ -148,6 +148,14 @@
   .sobre-mi .text p {
     font-size: 1.1rem; /* Reducir el tamaño del texto */
   }
+
+  .tecnologias h2 {
+    font-size: 2rem; /* Reducir el tamaño del título de la sección de tecnologías */
+  }
+
+  .icon {
+    font-size: 2rem; /* Reducir el tamaño de los íconos en la sección de tecnologías */
+  }
 }
 
 @media (max-width: 768px) {
@@ -168,6 +176,25 @@
   .sobre-mi .text p {
     font-size: 1rem; /* Reducir aún más el tamaño del texto */
   }
+
+  .tecnologias h2 {
+    font-size: 1.8rem; /* Reducir el tamaño del título de la sección de tecnologías */
+  }
+
+  .icon {
+    font-size: 1.8rem; /* Reducir el tamaño de los íconos en la sección de tecnologías */
+  }
+
+  .sobre-mi .button-group {
+    display: flex;
+    justify-content: center; /* Asegura que los botones estén centrados */
+    gap: 10px; /* Espacio entre los botones */
+  }
+
+  .sobre-mi .btn {
+    font-size: 0.9rem; /* Reducir el tamaño de los botones */
+    padding: 8px 16px; /* Ajustar el padding de los botones */
+  }
 }
 
 @media (max-width: 480px) {
@@ -187,7 +214,22 @@
     font-size: 0.9rem; /* Ajustar el tamaño del texto para pantallas muy pequeñas */
   }
 
-  .sobre-mi .vm-text {
-    display: none;
+  .tecnologias h2 {
+    font-size: 1.6rem; /* Reducir el tamaño del título de la sección de tecnologías */
+  }
+
+  .icon {
+    font-size: 1.5rem; /* Reducir el tamaño de los íconos en la sección de tecnologías */
+  }
+
+  .sobre-mi .button-group {
+    display: flex;
+    justify-content: center; /* Mantener los botones centrados */
+    gap: 5px; /* Reducir aún más el espacio entre los botones */
+  }
+
+  .sobre-mi .btn {
+    font-size: 0.8rem; /* Ajustar el tamaño de los botones en pantallas muy pequeñas */
+    padding: 6px 12px; /* Ajustar el padding de los botones */
   }
 }

@@ -21,39 +21,47 @@ export const Contacto = () => {
         <div className="social-icons">
           <div className="social-item">
             <a
-              href="https://www.instagram.com/franuncalap/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram />
-            </a>
-            <p>https://instagram.com/franuncalap/</p>
-          </div>
-          <div className="social-item">
-            <a
               href="mailto:franuncal@gmail.com"
               target="_blank"
               rel="noreferrer"
+              className="icon-email"
             >
               <FaEnvelope />
+              <span>franuncal@gmail.com</span>
             </a>
-            <p>franuncal@gmail.com</p>
-          </div>
-          <div className="social-item">
-            <a href="https://wa.me/2324469630" target="_blank" rel="noreferrer">
-              <FaWhatsapp />
-            </a>
-            <p>https://wa.me/2324469630</p>
           </div>
           <div className="social-item">
             <a
               href="https://www.linkedin.com/in/franuncal/"
               target="_blank"
               rel="noreferrer"
+              className="icon-linkedin"
             >
               <FaLinkedin />
+              <span>https://www.linkedin.com/in/franuncal/</span>
             </a>
-            <p>https://www.linkedin.com/in/franuncal/</p>
+          </div>
+          <div className="social-item">
+            <a
+              href="https://www.instagram.com/franuncalap/"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-instagram"
+            >
+              <FaInstagram />
+              <span>https://instagram.com/franuncalap/</span>
+            </a>
+          </div>
+          <div className="social-item">
+            <a
+              href="https://wa.me/2324469630"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-whatsapp"
+            >
+              <FaWhatsapp />
+              <span>https://wa.me/2324469630</span>
+            </a>
           </div>
         </div>
       </div>
