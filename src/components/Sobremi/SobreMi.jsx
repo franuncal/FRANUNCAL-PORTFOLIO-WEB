@@ -1,7 +1,13 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa"; // Importar los iconos
 import "./SobreMi.css";
 import img from "../../assets/img/img4.png";
-// import img from "../../assets/img/img4.jpeg";
-// import img from "../../assets/img/img1.jpeg";
 import cv from "../../assets/pdf/cv-uncal apraiz francisco.pdf";
 
 export const SobreMi = () => {
@@ -14,13 +20,13 @@ export const SobreMi = () => {
         <div className="text">
           <h2>Hola, soy Fran</h2>
           <p>
-            Soy Programador Web con más de 3 años de experiencia creando sitios
-            web para diversos clientes. A lo largo de mi carrera, he adquirido
-            habilidades técnicas sólidas en React y JavaScript, lo que me
-            permite enfrentar desafíos complejos y aportar soluciones
-            eficientes. Mi meta es seguir evolucionando en este rol, creando
-            interfaces de usuario innovadoras y colaborando en equipos dinámicos
-            para lograr resultados sobresalientes.
+            Soy programador web freelance con más de 3 años de experiencia en la
+            creación de sitios web personalizados. Especializado en React y
+            JavaScript, aporto soluciones eficientes a proyectos desafiantes. Mi
+            enfoque freelance me ha permitido colaborar con clientes de diversas
+            industrias, ofreciendo soluciones a medida. Creo en la comunicación
+            clara para asegurar la satisfacción del cliente en todo el proceso
+            de desarrollo.
           </p>
           <div className="button-group">
             <a href="/contacto" className="btn btn-primary">
@@ -30,6 +36,19 @@ export const SobreMi = () => {
               Descargar CV
             </a>
           </div>
+        </div>
+      </div>
+
+      {/* Nueva sección de Tecnologías */}
+      <div className="tecnologias">
+        <h2>Tecnologías</h2>
+        <div className="iconos-tecnologias">
+          <FaHtml5 className="icon icon-html" />
+          <FaCss3Alt className="icon icon-css" />
+          <FaJs className="icon icon-js" />
+          <FaReact className="icon icon-react" />
+          <FaGitAlt className="icon icon-git" />
+          <FaGithub className="icon icon-github" />
         </div>
       </div>
     </section>

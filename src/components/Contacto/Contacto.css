@@ -9,19 +9,16 @@
 
 .contact-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
 .contact-info {
-  flex: 1;
-  text-align: left;
-  padding-right: 2rem;
-  max-width: 500px; /* Reducir el ancho del texto */
-  margin-bottom: 2rem; /* Separar el texto del formulario */
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .contact-info h2 {
@@ -31,95 +28,38 @@
 }
 
 .contact-description {
+  max-width: 700px;
   color: #666;
   letter-spacing: 0.05rem;
-  font-size: 1rem;
-  margin-bottom: 2rem;
   font-size: 18px;
+  margin-bottom: 2rem;
 }
 
-.contact-form {
-  flex: 1;
-  max-width: 500px;
-  background-color: var(--bg-color); /* Fondo oscuro para el formulario */
-  padding: 2rem;
-  border-radius: 8px;
+.social-icons {
+  display: flex;
+  flex-direction: column; /* Mantener en columna para que los grupos estén uno debajo del otro */
+  align-items: flex-start; /* Alinear a la izquierda */
+  gap: 15px; /* Espaciado entre los íconos y las URLs */
 }
 
-.contact-form .form-group {
-  margin-bottom: 1.5rem;
+.social-item {
+  display: flex;
+  align-items: center; /* Centra verticalmente el icono y la descripción */
 }
 
-.contact-form input,
-.contact-form textarea {
-  background-color: var(--bg-color); /* Fondo oscuro */
-  color: #fff; /* Texto blanco */
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #fff;
-  padding: 10px 0;
-  font-size: 16px;
+.social-item a {
+  color: var(--bg-color);
+  font-size: 2rem; /* Aumenta el tamaño del ícono */
+  transition: color 0.3s ease; /* Suave transición al hover */
+  margin-right: 10px; /* Espacio entre el icono y la URL */
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #aaa; /* Placeholder en gris suave */
+.social-item a:hover {
+  color: #888; /* Cambia de color al hacer hover */
 }
 
-.contact-form textarea {
-  resize: none;
-}
-
-.submit-btn {
-  background-color: var(--bg-color); /* Fondo oscuro para el botón */
-  color: #fff; /* Texto blanco */
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background-color: var(--text-color); /* Cambiar color al hacer hover */
-}
-
-.submit-btn .arrow {
-  font-size: 28px;
-}
-
-.submit-btn:hover .arrow {
-  color: #888;
-}
-
-.success-message {
-  color: green; /* Color para el mensaje de éxito */
-  margin-top: 1rem;
-}
-
-.error-message {
-  color: red; /* Color para el mensaje de error */
-  margin-top: 1rem;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-info {
-    text-align: center;
-    padding-right: 0;
-    margin-bottom: 2rem;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 16px;
-  }
+.social-item p {
+  margin: 0; /* Elimina el margen del párrafo para mejor alineación */
+  font-size: 1rem; /* Tamaño de fuente para la URL */
+  color: #666; /* Color del texto de la URL */
 }

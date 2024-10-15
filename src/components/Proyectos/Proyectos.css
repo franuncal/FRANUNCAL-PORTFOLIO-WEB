@@ -70,13 +70,69 @@
   margin-bottom: 1rem;
 }
 
-.tech-logos img {
-  width: 20px;
+/* Mantener el color original de los íconos */
+.tech-logos .icon {
+  width: 20px; /* Ajusta el tamaño según sea necesario */
   height: auto;
-  object-fit: contain;
-  filter: grayscale(50%);
+  color: rgb(8, 47, 60);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Colores originales de los iconos */
+.icon-html {
+  color: rgb(8, 47, 60);
+}
+
+.icon-html:hover {
+  color: #e44d26; /* Color HTML5 */
+}
+
+.icon-css {
+  color: rgb(8, 47, 60);
+}
+
+.icon-css:hover {
+  color: #1572b6; /* Color CSS3 */
+}
+
+.icon-js {
+  color: rgb(8, 47, 60);
+}
+
+.icon-js:hover {
+  color: #f7df1e; /* Color JavaScript */
+}
+
+.icon-react {
+  color: rgb(8, 47, 60);
+}
+
+.icon-react:hover {
+  color: #61dafb; /* Color React */
+}
+
+.icon-git {
+  color: rgb(8, 47, 60);
+}
+
+.icon-git:hover {
+  color: #f1502f; /* Color Git */
+}
+
+.icon-github {
+  color: rgb(8, 47, 60);
+}
+
+.icon-github:hover {
+  color: #181717; /* Color GitHub */
+}
+
+/* Efecto de zoom al hacer hover */
+.tech-logos .icon:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para los enlaces */
 .project-info a {
   font-family: "Akatab", sans-serif;
   display: block;
@@ -93,6 +149,7 @@
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Efecto hover solo para los enlaces */
 .project-info a:hover {
   transform: scale(1.1);
   filter: brightness(0.8);
@@ -119,7 +176,7 @@
     margin-bottom: 1.2rem;
   }
 
-  .tech-logos img {
-    width: 15px;
+  .tech-logos .icon {
+    width: 15px; /* Ajusta el tamaño para pantallas pequeñas */
   }
 }

@@ -1,4 +1,10 @@
 import "./Contacto.css";
+import {
+  FaInstagram,
+  FaEnvelope,
+  FaWhatsapp,
+  FaLinkedin,
+} from "react-icons/fa";
 
 export const Contacto = () => {
   return (
@@ -8,57 +14,48 @@ export const Contacto = () => {
           <h2>Contacto</h2>
           <p className="contact-description">
             Si tienes alguna pregunta o deseas colaborar, no dudes en
-            contactarme a través del formulario o por mis redes sociales.
+            contactarme a través de mis redes sociales o por email.
           </p>
         </div>
 
-        <form
-          className="contact-form dark-form"
-          action="https://formsubmit.co/unquidev@gmail.com"
-          method="POST"
-        >
-          <div className="form-group">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Nombre"
-              required
-            />
+        <div className="social-icons">
+          <div className="social-item">
+            <a
+              href="https://www.instagram.com/franuncalap/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <p>https://instagram.com/franuncalap/</p>
           </div>
-          <div className="form-group">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
+          <div className="social-item">
+            <a
+              href="mailto:franuncal@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaEnvelope />
+            </a>
+            <p>franuncal@gmail.com</p>
           </div>
-          <div className="form-group">
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Mensaje"
-              required
-            ></textarea>
+          <div className="social-item">
+            <a href="https://wa.me/2324469630" target="_blank" rel="noreferrer">
+              <FaWhatsapp />
+            </a>
+            <p>https://wa.me/2324469630</p>
           </div>
-          <button type="submit" className="submit-btn">
-            <span className="arrow">➔</span>
-          </button>
-        </form>
-        <input
-          type="hidden"
-          name="_next"
-          value="https://franuncal.unquidev.com/"
-        ></input>
-        <input
-          type="hidden"
-          name="_subject"
-          value="¡Nuevo Contacto de la Web!"
-        ></input>
-        <input type="hidden" name="_captcha" value="false" />
+          <div className="social-item">
+            <a
+              href="https://www.linkedin.com/in/franuncal/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <p>https://www.linkedin.com/in/franuncal/</p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -4,10 +4,7 @@ import img1 from "../../assets/img/img-proyectos/cm1.png";
 import img2 from "../../assets/img/img-proyectos/fr1.png";
 import img3 from "../../assets/img/img-proyectos/ud.png";
 
-import logo from "../../assets/img-logos/html.png";
-import logo1 from "../../assets/img-logos/css.png";
-import logo2 from "../../assets/img-logos/js.png";
-import logo3 from "../../assets/img-logos/react.png";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa"; // Importa los íconos de react-icons
 
 const Proyectos = () => {
   return (
@@ -19,7 +16,7 @@ const Proyectos = () => {
       </p>
       <div className="projects-container">
         <div className="project-card">
-          <img src={img2} alt="Proyecto 3" />
+          <img src={img2} alt="Portfolio del realizador audiovisual" />
           <div className="project-info">
             <h3>FR - Realizador Audiovisual</h3>
             <p>
@@ -28,20 +25,23 @@ const Proyectos = () => {
               visitantes a explorar su trabajo mediante galerías visuales y
               permite fácilmente programar reuniones para futuros proyectos.
             </p>
-            {/* Contenedor para los logos de las tecnologías */}
             <div className="tech-logos">
-              <img src={logo} alt="HTML Logo" />
-              <img src={logo1} alt="CSS Logo" />
-              <img src={logo2} alt="JavaScript Logo" />
-              <img src={logo3} alt="React Logo" />
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
+              <FaReact className="icon icon-react" />
             </div>
-            <a href="https://federementeria.com/" target="_blank">
+            <a
+              href="https://federementeria.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Sitio Web
             </a>
           </div>
         </div>
         <div className="project-card">
-          <img src={img} alt="Proyecto 1" />
+          <img src={img} alt="Bodas Click" />
           <div className="project-info">
             <h3>Bodas Click</h3>
             <p>
@@ -50,20 +50,18 @@ const Proyectos = () => {
               eventos y coordinar todos los detalles de una boda desde una única
               plataforma.
             </p>
-            {/* Contenedor para los logos de las tecnologías */}
             <div className="tech-logos">
-              <img src={logo} alt="HTML Logo" />
-              <img src={logo1} alt="CSS Logo" />
-              <img src={logo2} alt="JavaScript Logo" />
-              {/* <img src={logo3} alt="React Logo" /> */}
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
             </div>
-            <a href="https://bodas.click/" target="_blank">
+            <a href="https://bodas.click/" target="_blank" rel="noreferrer">
               Sitio Web
             </a>
           </div>
         </div>
         <div className="project-card">
-          <img src={img1} alt="Proyecto 2" />
+          <img src={img1} alt="Landing page Chand Mantra" />
           <div className="project-info">
             <h3>Chand Mantra</h3>
             <p>
@@ -73,18 +71,17 @@ const Proyectos = () => {
               compra de manera eficiente.
             </p>
             <div className="tech-logos">
-              <img src={logo} alt="HTML Logo" />
-              <img src={logo1} alt="CSS Logo" />
-              <img src={logo2} alt="JavaScript Logo" />
-              {/* <img src={logo3} alt="React Logo" /> */}
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
             </div>
-            <a href="https://chandmantra.com/" target="_blank">
+            <a href="https://chandmantra.com/" target="_blank" rel="noreferrer">
               Sitio Web
             </a>
           </div>
         </div>
         <div className="project-card">
-          <img src={img3} alt="Proyecto 2" />
+          <img src={img3} alt="Sitio web corporativo Unqui Devs" />
           <div className="project-info">
             <h3>Unqui Devs</h3>
             <p>
@@ -93,14 +90,12 @@ const Proyectos = () => {
               secciones informativas que ayudan a los clientes a entender el
               valor de los productos ofrecidos.
             </p>
-            {/* Contenedor para los logos de las tecnologías */}
             <div className="tech-logos">
-              <img src={logo} alt="HTML Logo" />
-              <img src={logo1} alt="CSS Logo" />
-              <img src={logo2} alt="JavaScript Logo" />
-              {/* <img src={logo3} alt="React Logo" /> */}
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
             </div>
-            <a href="https://unquidev.com/" target="_blank">
+            <a href="https://unquidev.com/" target="_blank" rel="noreferrer">
               Sitio Web
             </a>
           </div>

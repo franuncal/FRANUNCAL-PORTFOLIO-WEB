@@ -77,6 +77,60 @@
   filter: brightness(0.8);
 }
 
+/* Sección de Tecnologías */
+.tecnologias {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tecnologias h2 {
+  font-size: 2.5rem;
+  color: rgb(8, 47, 60);
+  margin-bottom: 20px;
+}
+
+.iconos-tecnologias {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: rgb(8, 47, 60);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Colores originales de los iconos */
+.icon-html:hover {
+  color: #e44d26; /* Color HTML5 */
+}
+
+.icon-css:hover {
+  color: #1572b6; /* Color CSS3 */
+}
+
+.icon-js:hover {
+  color: #f7df1e; /* Color JavaScript */
+}
+
+.icon-react:hover {
+  color: #61dafb; /* Color React */
+}
+
+.icon-git:hover {
+  color: #f1502f; /* Color Git */
+}
+
+.icon-github:hover {
+  color: #181717; /* Color GitHub */
+}
+
+/* Efecto de zoom al hacer hover */
+.icon:hover {
+  transform: scale(1.2);
+}
+
 /* Estilos responsivos */
 @media (max-width: 1024px) {
   .sobre-mi {
