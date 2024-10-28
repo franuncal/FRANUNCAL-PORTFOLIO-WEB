@@ -3,6 +3,7 @@ import img from "../../assets/img/img-proyectos/bodas1.png";
 import img1 from "../../assets/img/img-proyectos/cm1.png";
 import img2 from "../../assets/img/img-proyectos/fr1.png";
 import img3 from "../../assets/img/img-proyectos/ud.png";
+import img4 from "../../assets/img/img-proyectos/CT1.png";
 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa"; // Importa los íconos de react-icons
 
@@ -15,6 +16,32 @@ const Proyectos = () => {
         carrera como programador.
       </p>
       <div className="projects-container">
+        <div className="project-card">
+          <img src={img4} alt="Portfolio del realizador audiovisual" />
+          <div className="project-info">
+            <h3>Cabañas Temistocles</h3>
+            <p>
+              Sitio web para Cabañas Temistocles - Esquel, diseñado para mostrar
+              el encanto de las cabañas mediante imágenes y descripciones
+              detalladas. El sitio permite a los visitantes explorar las
+              instalaciones y servicios disponibles, así como realizar reservas
+              de manera sencilla y efectiva.
+            </p>
+            <div className="tech-logos">
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
+              <FaReact className="icon icon-react" />
+            </div>
+            <a
+              href="https://proyecto.unquidev.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Sitio Web
+            </a>
+          </div>
+        </div>
         <div className="project-card">
           <img src={img2} alt="Portfolio del realizador audiovisual" />
           <div className="project-info">
