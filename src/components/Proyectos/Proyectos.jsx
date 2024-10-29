@@ -16,6 +16,7 @@ const Proyectos = () => {
         carrera como programador.
       </p>
       <div className="projects-container">
+        {/* Temistocles */}
         <div className="project-card">
           <img src={img4} alt="Portfolio del realizador audiovisual" />
           <div className="project-info">
@@ -42,6 +43,7 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
+        {/* Fede */}
         <div className="project-card">
           <img src={img2} alt="Portfolio del realizador audiovisual" />
           <div className="project-info">
@@ -67,6 +69,7 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
+        {/* Bodas */}
         <div className="project-card">
           <img src={img} alt="Bodas Click" />
           <div className="project-info">
@@ -87,6 +90,7 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
+        {/* Chand Mantra */}
         <div className="project-card">
           <img src={img1} alt="Landing page Chand Mantra" />
           <div className="project-info">
@@ -107,6 +111,7 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
+        {/* Unqui Dev */}
         <div className="project-card">
           <img src={img3} alt="Sitio web corporativo Unqui Devs" />
           <div className="project-info">
