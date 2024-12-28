@@ -7,7 +7,7 @@ import {
   FaGithub,
 } from "react-icons/fa"; // Importar los iconos
 import "./SobreMi.css";
-import img from "../../assets/img/4.png";
+import img from "../../assets/img/4.webp";
 import cv from "../../assets/pdf/UncalFrancisco.pdf";
 
 export const SobreMi = () => {

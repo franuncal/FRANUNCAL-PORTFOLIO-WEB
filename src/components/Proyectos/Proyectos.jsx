@@ -1,12 +1,12 @@
 import "./Proyectos.css";
-import img from "../../assets/img/img-proyectos/bodas1.png";
-import img1 from "../../assets/img/img-proyectos/chand1.png";
-import img2 from "../../assets/img/img-proyectos/fede2.png";
-import img3 from "../../assets/img/img-proyectos/unqui1.png";
-import img4 from "../../assets/img/img-proyectos/cab1.png";
-import img5 from "../../assets/img/img-proyectos/ddl1.png";
-import img6 from "../../assets/img/img-proyectos/mi1.png";
-import img7 from "../../assets/img/img-proyectos/prop1.png";
+import img from "../../assets/img/img-proyectos/bodas1.webp";
+import img1 from "../../assets/img/img-proyectos/chand1.webp";
+import img2 from "../../assets/img/img-proyectos/fede2.webp";
+import img3 from "../../assets/img/img-proyectos/unqui1.webp";
+import img4 from "../../assets/img/img-proyectos/cab1.webp";
+import img5 from "../../assets/img/img-proyectos/ddl1.webp";
+import img6 from "../../assets/img/img-proyectos/mi1.webp";
+import img7 from "../../assets/img/img-proyectos/prop1.webp";
 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa"; // Importa los íconos de react-icons
 
