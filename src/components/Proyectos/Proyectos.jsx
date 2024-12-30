@@ -21,7 +21,7 @@ const Proyectos = () => {
       <div className="projects-container">
         {/* Silvestre */}
         <div className="project-card">
-          <img src={img5} alt="Portfolio del realizador audiovisual" />
+          <img src={img5} alt="Silvestre DDL" />
           <div className="project-info">
             <h3>Silvestre - Dulce de Leche</h3>
             <p>
@@ -47,7 +47,7 @@ const Proyectos = () => {
         </div>
         {/* Temistocles */}
         <div className="project-card">
-          <img src={img4} alt="Portfolio del realizador audiovisual" />
+          <img src={img4} alt="Cabanas Temistocles" />
           <div className="project-info">
             <h3>Cabañas Temistocles</h3>
             <p>
@@ -99,7 +99,7 @@ const Proyectos = () => {
         </div>
         {/* M.I Logistica */}
         <div className="project-card">
-          <img src={img6} alt="Portfolio del realizador audiovisual" />
+          <img src={img6} alt="M.I Logistica" />
           <div className="project-info">
             <h3>M.I Logística y Comercio Internacional</h3>
             <p>
@@ -145,7 +145,7 @@ const Proyectos = () => {
         </div>
         {/* Chand Mantra */}
         <div className="project-card">
-          <img src={img1} alt="Landing page Chand Mantra" />
+          <img src={img1} alt="Chand Mantra" />
           <div className="project-info">
             <h3>Chand Mantra - Espejos de Diseño</h3>
             <p>
@@ -187,7 +187,7 @@ const Proyectos = () => {
         </div>
         {/* Alquileres */}
         <div className="project-card">
-          <img src={img7} alt="Portfolio del realizador audiovisual" />
+          <img src={img7} alt="Alquileres Temporales" />
           <div className="project-info">
             <h3>Alquileres Temporales</h3>
             <p>
@@ -203,7 +203,7 @@ const Proyectos = () => {
               <FaReact className="icon icon-react" />
             </div>
             <a
-              href="https://proyecto2.unquidev.com"
+              href="https://alquileresquel.com"
               target="_blank"
               rel="noreferrer"
             >
