@@ -2,7 +2,7 @@ import "./Proyectos.css";
 import img from "../../assets/img/img-proyectos/bodas1.webp";
 import img1 from "../../assets/img/img-proyectos/chand1.webp";
 import img2 from "../../assets/img/img-proyectos/fede2.webp";
-import img3 from "../../assets/img/img-proyectos/unqui1.webp";
+import img3 from "../../assets/img/img-proyectos/unqui2.webp";
 import img4 from "../../assets/img/img-proyectos/cab1.webp";
 import img5 from "../../assets/img/img-proyectos/ddl1.webp";
 import img6 from "../../assets/img/img-proyectos/mi1.webp";
@@ -63,7 +63,7 @@ const Proyectos = () => {
               <FaReact className="icon icon-react" />
             </div>
             <a
-              href="https://proyecto.unquidev.com/"
+              href="https://temistoclesesquel.com.ar/"
               target="_blank"
               rel="noreferrer"
             >
