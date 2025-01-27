@@ -20,7 +20,7 @@ export const SobreMi = () => {
         <div className="text">
           <h2>Hola, soy Fran</h2>
           <p>
-            Soy programador web freelance con más de 3 años de experiencia en la
+            Soy programador web frontend con más de 3 años de experiencia en la
             creación de sitios web personalizados. Especializado en React y
             JavaScript, aporto soluciones eficientes a proyectos desafiantes. Mi
             enfoque freelance me ha permitido colaborar con clientes de diversas
