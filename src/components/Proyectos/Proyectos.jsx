@@ -37,7 +37,7 @@ const Proyectos = () => {
               {/* <FaReact className="icon icon-react" /> */}
             </div>
             <a
-              href="https://silvestre.unquidev.com/"
+              href="https://silvestreddl.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -97,15 +97,16 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
-        {/* M.I Logistica */}
+        {/* Alquileres */}
         <div className="project-card">
-          <img src={img6} alt="M.I Logistica" />
+          <img src={img7} alt="Alquileres Temporales" />
           <div className="project-info">
-            <h3>M.I Logística y Comercio Internacional</h3>
+            <h3>Alquileres Temporales</h3>
             <p>
-              Desarrollo del sitio web de Mi Logística Internacional presenta
-              los servicios de transporte y logística de la empresa, facilitando
-              el contacto y la información clave.
+              Sitio web para mostrar propiedades en alquiler, con detalles de
+              cada inmueble, fotos atractivas y descripciones claras. Facilita
+              la búsqueda de opciones disponibles y permite acceder a
+              información relevante de manera sencilla.
             </p>
             <div className="tech-logos">
               <FaHtml5 className="icon icon-html" />
@@ -114,7 +115,7 @@ const Proyectos = () => {
               <FaReact className="icon icon-react" />
             </div>
             <a
-              href="https://milogisticainternacional.com"
+              href="https://alquileresquel.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -122,6 +123,7 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
+
         {/* Bodas */}
         <div className="project-card">
           <img src={img} alt="Bodas Click" />
@@ -185,16 +187,15 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
-        {/* Alquileres */}
+        {/* M.I Logistica */}
         <div className="project-card">
-          <img src={img7} alt="Alquileres Temporales" />
+          <img src={img6} alt="M.I Logistica" />
           <div className="project-info">
-            <h3>Alquileres Temporales</h3>
+            <h3>M.I Logística y Comercio Internacional</h3>
             <p>
-              Sitio web para mostrar propiedades en alquiler, con detalles de
-              cada inmueble, fotos atractivas y descripciones claras. Facilita
-              la búsqueda de opciones disponibles y permite acceder a
-              información relevante de manera sencilla.
+              Desarrollo del sitio web de Mi Logística Internacional presenta
+              los servicios de transporte y logística de la empresa, facilitando
+              el contacto y la información clave.
             </p>
             <div className="tech-logos">
               <FaHtml5 className="icon icon-html" />
@@ -203,7 +204,7 @@ const Proyectos = () => {
               <FaReact className="icon icon-react" />
             </div>
             <a
-              href="https://alquileresquel.com"
+              href="https://milogisticainternacional.com"
               target="_blank"
               rel="noreferrer"
             >
