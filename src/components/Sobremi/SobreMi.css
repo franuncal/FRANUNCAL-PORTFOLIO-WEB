@@ -23,7 +23,7 @@
 }
 
 .sobre-mi .image img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 50%; /* Esto hace que la imagen sea circular */
   object-fit: cover; /* Asegura que la imagen se recorte correctamente dentro del círculo */
