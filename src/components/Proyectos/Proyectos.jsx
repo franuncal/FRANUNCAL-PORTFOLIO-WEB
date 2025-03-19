@@ -34,7 +34,7 @@ const Proyectos = () => {
               <FaHtml5 className="icon icon-html" />
               <FaCss3Alt className="icon icon-css" />
               <FaJs className="icon icon-js" />
-              {/* <FaReact className="icon icon-react" /> */}
+              <FaReact className="icon icon-react" />
             </div>
             <a
               href="https://silvestreddl.com/"
