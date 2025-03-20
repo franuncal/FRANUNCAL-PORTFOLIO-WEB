@@ -5,11 +5,8 @@ import {
   FaReact,
   FaGitAlt,
   FaGithub,
-  // Fapost,
   FaAws,
   FaNpm,
-  FaFigma,
-  // FaSQ,
 } from "react-icons/fa"; // Importar los iconos
 import "./SobreMi.css";
 import img from "../../assets/img/1.webp";
@@ -56,7 +53,6 @@ export const SobreMi = () => {
           <FaGithub className="icon icon-github" />
           <FaAws className="icon icon-aws" />
           <FaNpm className="icon icon-npm" />
-          <FaFigma className="icon icon-figma" />
         </div>
       </div>
     </section>
