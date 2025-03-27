@@ -10,7 +10,8 @@ import {
 } from "react-icons/fa"; // Importar los iconos
 import "./SobreMi.css";
 import img from "../../assets/img/1.webp";
-import cv from "../../assets/pdf/UncalFranciscoCv.pdf";
+// import cv from "../../assets/pdf/UncalFranciscoCv.pdf";
+import cv from "../../assets/pdf/FranciscoUncalApraiz.pdf";
 
 export const SobreMi = () => {
   return (

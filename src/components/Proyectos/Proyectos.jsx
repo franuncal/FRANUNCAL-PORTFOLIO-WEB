@@ -19,6 +19,32 @@ const Proyectos = () => {
         carrera como programador.
       </p>
       <div className="projects-container">
+        {/* Fede */}
+        <div className="project-card">
+          <img src={img2} alt="Portfolio del realizador audiovisual" />
+          <div className="project-info">
+            <h3>FR - Realizador Audiovisual</h3>
+            <p>
+              Portfolio profesional de un realizador audiovisual, destacando sus
+              proyectos más importantes. El sitio permite explorar su trabajo
+              visualmente y facilita la programación de reuniones para futuros
+              proyectos.
+            </p>
+            <div className="tech-logos">
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
+              <FaReact className="icon icon-react" />
+            </div>
+            <a
+              href="https://federementeria.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Sitio Web
+            </a>
+          </div>
+        </div>
         {/* Silvestre */}
         <div className="project-card">
           <img src={img5} alt="Silvestre DDL" />
@@ -71,32 +97,7 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
-        {/* Fede */}
-        <div className="project-card">
-          <img src={img2} alt="Portfolio del realizador audiovisual" />
-          <div className="project-info">
-            <h3>FR - Realizador Audiovisual</h3>
-            <p>
-              Portfolio profesional de un realizador audiovisual, destacando sus
-              proyectos más importantes. El sitio permite explorar su trabajo
-              visualmente y facilita la programación de reuniones para futuros
-              proyectos.
-            </p>
-            <div className="tech-logos">
-              <FaHtml5 className="icon icon-html" />
-              <FaCss3Alt className="icon icon-css" />
-              <FaJs className="icon icon-js" />
-              <FaReact className="icon icon-react" />
-            </div>
-            <a
-              href="https://federementeria.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Sitio Web
-            </a>
-          </div>
-        </div>
+
         {/* Alquileres */}
         <div className="project-card">
           <img src={img7} alt="Alquileres Temporales" />
