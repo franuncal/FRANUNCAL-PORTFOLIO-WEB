@@ -1,12 +1,12 @@
 import "./Proyectos.css";
-import img from "../../assets/img/img-proyectos/bodas1.webp";
-import img1 from "../../assets/img/img-proyectos/chand1.webp";
-import img2 from "../../assets/img/img-proyectos/fede2.webp";
+import img from "../../assets/img/img-proyectos/N1.webp";
+import img1 from "../../assets/img/img-proyectos/N8.webp";
+import img2 from "../../assets/img/img-proyectos/N2.webp";
 import img3 from "../../assets/img/img-proyectos/unqui2.webp";
-import img4 from "../../assets/img/img-proyectos/cab1.webp";
-import img5 from "../../assets/img/img-proyectos/ddl1.webp";
-import img6 from "../../assets/img/img-proyectos/mi1.webp";
-import img7 from "../../assets/img/img-proyectos/prop1.webp";
+import img4 from "../../assets/img/img-proyectos/N6.webp";
+import img5 from "../../assets/img/img-proyectos/N5.webp";
+// import img6 from "../../assets/img/img-proyectos/mi1.webp";
+import img7 from "../../assets/img/img-proyectos/N3.webp";
 
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa"; // Importa los íconos de react-icons
 
@@ -19,6 +19,32 @@ const Proyectos = () => {
         carrera como programador.
       </p>
       <div className="projects-container">
+        {/* Grand Alyson */}
+        <div className="project-card">
+          <img src={img} alt="Portfolio del realizador audiovisual" />
+          <div className="project-info">
+            <h3>Grand Alyson - Proyecto Inmobiliario</h3>
+            <p>
+              Landing page inmobiliaria desarrollada para Grand Alyson, proyecto
+              residencial orientado a mayores de 45 años. El sitio destaca su
+              propuesta de vida, ubicación y amenities, transmitiendo calidez y
+              confianza para facilitar consultas y ventas.
+            </p>
+            <div className="tech-logos">
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
+              <FaReact className="icon icon-react" />
+            </div>
+            <a
+              href="https://experienciagrandalyson.com.ar/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Sitio Web
+            </a>
+          </div>
+        </div>
         {/* Fede */}
         <div className="project-card">
           <img src={img2} alt="Portfolio del realizador audiovisual" />
@@ -71,6 +97,33 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
+        {/* Menta y Limon */}
+        <div className="project-card">
+          <img src={img7} alt="Alquileres Temporales" />
+          <div className="project-info">
+            <h3>Menta&Limon Cumbia</h3>
+            <p>
+              Landing page creada para la banda de cumbia Menta y Limón,
+              mostrando su identidad musical y próximos shows. El sitio combina
+              un diseño vibrante con contenido multimedia, permitiendo conocer
+              su propuesta artística y agilizando las contrataciones para
+              eventos.
+            </p>
+            <div className="tech-logos">
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
+              <FaReact className="icon icon-react" />
+            </div>
+            <a
+              href="https://mentaylimoncumbia.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Sitio Web
+            </a>
+          </div>
+        </div>
         {/* Temistocles */}
         <div className="project-card">
           <img src={img4} alt="Cabanas Temistocles" />
@@ -97,36 +150,8 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
-
-        {/* Alquileres */}
-        <div className="project-card">
-          <img src={img7} alt="Alquileres Temporales" />
-          <div className="project-info">
-            <h3>Alquileres Temporales</h3>
-            <p>
-              Sitio web para mostrar propiedades en alquiler, con detalles de
-              cada inmueble, fotos atractivas y descripciones claras. Facilita
-              la búsqueda de opciones disponibles y permite acceder a
-              información relevante de manera sencilla.
-            </p>
-            <div className="tech-logos">
-              <FaHtml5 className="icon icon-html" />
-              <FaCss3Alt className="icon icon-css" />
-              <FaJs className="icon icon-js" />
-              <FaReact className="icon icon-react" />
-            </div>
-            <a
-              href="https://alquileresquel.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Sitio Web
-            </a>
-          </div>
-        </div>
-
         {/* Bodas */}
-        <div className="project-card">
+        {/* <div className="project-card">
           <img src={img} alt="Bodas Click" />
           <div className="project-info">
             <h3>Bodas Click</h3>
@@ -145,7 +170,7 @@ const Proyectos = () => {
               Sitio Web
             </a>
           </div>
-        </div>
+        </div> */}
         {/* Chand Mantra */}
         <div className="project-card">
           <img src={img1} alt="Chand Mantra" />
@@ -189,7 +214,7 @@ const Proyectos = () => {
           </div>
         </div>
         {/* M.I Logistica */}
-        <div className="project-card">
+        {/* <div className="project-card">
           <img src={img6} alt="M.I Logistica" />
           <div className="project-info">
             <h3>M.I Logística y Comercio Internacional</h3>
@@ -212,7 +237,7 @@ const Proyectos = () => {
               Sitio Web
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
