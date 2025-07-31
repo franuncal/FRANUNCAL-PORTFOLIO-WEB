@@ -9,8 +9,8 @@ import {
   FaNpm,
 } from "react-icons/fa"; // Importar los iconos
 import "./SobreMi.css";
-import img from "../../assets/img/1.webp";
-// import cv from "../../assets/pdf/UncalFranciscoCv.pdf";
+// import img from "../../assets/img/1.webp";
+import img from "../../assets/img/1zon.webp";
 import cv from "../../assets/pdf/FranciscoUncalApraiz.pdf";
 
 export const SobreMi = () => {
@@ -23,13 +23,12 @@ export const SobreMi = () => {
         <div className="text">
           <h2>Hola, soy Fran</h2>
           <p>
-            Soy Programador Web Frontend con más de 3 años de experiencia en el
-            desarrollo de sitios web a medida. Me especializo en crear
-            soluciones eficientes y adaptadas a cada cliente, combinando
-            creatividad y funcionalidad. <br /> Me destaco por mi capacidad
-            analítica para resolver problemas, la comunicación clara y el
-            trabajo en equipo, asegurando siempre calidad y eficiencia en cada
-            proyecto.
+            Desarrollador Frontend con más de 4 años de experiencia creando
+            sitios web a medida. Me especializo en desarrollar soluciones
+            funcionales, atractivas y pensadas para cada cliente. <br /> Me
+            caracterizo por tener una mirada analítica, buena comunicación y
+            enfoque en el trabajo en equipo, buscando siempre calidad, claridad
+            y eficiencia en cada proyecto.
           </p>
           <div className="button-group">
             <a href="/contacto" className="btn btn-primary">

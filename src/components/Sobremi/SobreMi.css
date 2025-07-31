@@ -23,9 +23,9 @@
 }
 
 .sobre-mi .image img {
-  max-width: 70%;
+  max-width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10%;
   object-fit: cover; /* Asegura que la imagen se recorte correctamente dentro del círculo */
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -199,19 +199,21 @@
 
 @media (max-width: 480px) {
   .sobre-mi {
-    padding: 40px 5px; /* Reducir el padding en pantallas muy pequeñas */
+    padding: 10px 15px; /* Reducir el padding en pantallas muy pequeñas */
   }
 
   .sobre-mi .container {
-    gap: 20px; /* Reducir el espacio entre el texto y la imagen */
+    gap: 12px; /* Reducir el espacio entre el texto y la imagen */
   }
 
   .sobre-mi .text h2 {
-    font-size: 2rem; /* Ajustar el tamaño del título para pantallas muy pequeñas */
+    font-size: 2rem;
+    text-align: center;
   }
 
   .sobre-mi .text p {
-    font-size: 0.9rem; /* Ajustar el tamaño del texto para pantallas muy pequeñas */
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   .tecnologias h2 {
@@ -219,7 +221,7 @@
   }
 
   .icon {
-    font-size: 1.5rem; /* Reducir el tamaño de los íconos en la sección de tecnologías */
+    font-size: 1.3rem;
   }
 
   .sobre-mi .button-group {
