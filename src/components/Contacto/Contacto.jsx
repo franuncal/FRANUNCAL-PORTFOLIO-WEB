@@ -43,13 +43,13 @@ export const Contacto = () => {
           </div>
           <div className="social-item">
             <a
-              href="https://www.instagram.com/franuncalap/"
+              href="https://www.instagram.com/franuncal.dev/"
               target="_blank"
               rel="noreferrer"
               className="icon-instagram"
             >
               <FaInstagram />
-              <span>https://instagram.com/franuncalap/</span>
+              <span>https://instagram.com/franuncal.dev/</span>
             </a>
           </div>
           <div className="social-item">

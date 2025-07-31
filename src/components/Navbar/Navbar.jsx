@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <header>
       <a href="/" className="logo">
-        @franuncal
+        @franuncal.dev
       </a>
       <div
         className={`menu-toggle ${isMenuOpen ? "active" : ""}`}

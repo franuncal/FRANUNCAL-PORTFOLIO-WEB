@@ -21,7 +21,7 @@ const Proyectos = () => {
       <div className="projects-container">
         {/* Grand Alyson */}
         <div className="project-card">
-          <img src={img} alt="Portfolio del realizador audiovisual" />
+          <img src={img} alt="grand alyson web" />
           <div className="project-info">
             <h3>Grand Alyson - Proyecto Inmobiliario</h3>
             <p>
