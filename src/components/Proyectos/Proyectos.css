@@ -133,8 +133,12 @@
 }
 
 .project-info a:hover {
-  transform: scale(1.1);
-  filter: brightness(0.8);
+  background: #fff;
+  color: #111;
+  border: 1.5px solid #111;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.08);
+  filter: none;
 }
 
 /* Estilos responsivos */

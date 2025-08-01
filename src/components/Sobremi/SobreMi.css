@@ -1,237 +1,238 @@
-/* Sobre mí */
 .sobre-mi {
-  transition: background-color 0.3s ease;
   background-color: #f9f9f9;
-  padding: 100px;
-  position: relative; /* Asegurar que los elementos hijos se posicionen correctamente */
-  margin-top: 80px; /* Ajustar según la altura del header para evitar superposición */
+  padding: 80px 0 40px 0;
+  position: relative;
+  margin-top: 80px;
+  overflow-x: hidden; /* <-- Solución clave */
 }
 
 .sobre-mi .container {
-  height: 70vh;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px; /* Espacio entre el texto y la imagen */
+  gap: 60px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-.sobre-mi .image,
+.sobre-mi .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-logo {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 3px solid var(--second-bg-color);
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
 .sobre-mi .text {
-  flex: 1; /* Ocupan el mismo espacio */
-}
-
-.sobre-mi .image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10%;
-  object-fit: cover; /* Asegura que la imagen se recorte correctamente dentro del círculo */
-  transition: transform 0.3s ease, filter 0.3s ease;
+  flex: 1;
+  min-width: 260px;
 }
 
 .sobre-mi .text h2 {
   color: var(--bg-color);
-  font-size: 3.5rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 18px;
+  font-weight: 700;
 }
 
 .sobre-mi .text p {
-  color: #666;
-  letter-spacing: 0.05rem;
-  font-size: 1rem;
+  color: #444;
+  font-size: 1.15rem;
   line-height: 1.7;
+  margin-bottom: 10px;
 }
 
 .sobre-mi .button-group {
-  margin-top: 20px;
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .sobre-mi .btn {
   font-family: "Akatab", sans-serif;
-  padding: 10px 20px;
+  padding: 10px 24px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   color: #fff;
-  display: inline-block;
-  margin-right: 10px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  background: var(--second-bg-color);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, filter 0.3s;
 }
 
-.sobre-mi .btn-primary {
-  background-color: var(--second-bg-color);
+.sobre-mi .btn:hover {
+  background: #fff;
+  color: #111;
+  border: 1.5px solid #111;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.08);
+  filter: none;
 }
 
-.sobre-mi .btn-primary:hover {
-  transform: scale(1.1);
-  filter: brightness(0.8);
-}
-
-.sobre-mi .btn-secondary {
-  background-color: var(--second-bg-color);
-}
-
-.sobre-mi .btn-secondary:hover {
-  transform: scale(1.1);
-  filter: brightness(0.8);
-}
-
-/* Sección de Tecnologías */
 .tecnologias {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 .tecnologias h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: var(--bg-color);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  font-weight: 600;
+  padding-top: 2rem;
 }
 
 .iconos-tecnologias {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 28px;
+  padding-bottom: 5rem;
 }
 
 .icon {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: var(--bg-color);
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s, transform 0.3s;
 }
 
-/* Colores originales de los iconos */
 .icon-html:hover {
-  color: #e44d26; /* Color HTML5 */
+  color: #e44d26;
 }
-
 .icon-css:hover {
-  color: #1572b6; /* Color CSS3 */
+  color: #1572b6;
 }
-
 .icon-js:hover {
-  color: #f7df1e; /* Color JavaScript */
+  color: #f7df1e;
 }
-
 .icon-react:hover {
-  color: #61dafb; /* Color React */
+  color: #61dafb;
 }
-
 .icon-git:hover {
-  color: #f1502f; /* Color Git */
+  color: #f1502f;
 }
-
 .icon-github:hover {
-  color: #181717; /* Color GitHub */
+  color: #181717;
+}
+.icon-aws:hover {
+  color: #ff9900;
+}
+.icon-npm:hover {
+  color: #cb3837;
 }
 
-/* Efecto de zoom al hacer hover */
 .icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.18);
 }
 
-/* Estilos responsivos */
+/* Responsivo */
 @media (max-width: 1024px) {
   .sobre-mi {
-    padding: 80px 20px; /* Reducir el padding en pantallas medianas */
+    padding: 60px 0 30px 0;
   }
-
   .sobre-mi .container {
-    gap: 50px; /* Reducir el espacio entre el texto y la imagen */
+    gap: 36px;
   }
-
+  .profile-logo {
+    width: 200px;
+    height: 200px;
+  }
   .sobre-mi .text h2 {
-    font-size: 3rem; /* Reducir el tamaño del título */
+    font-size: 2.4rem;
   }
-
-  .sobre-mi .text p {
-    font-size: 1.1rem; /* Reducir el tamaño del texto */
-  }
-
   .tecnologias h2 {
-    font-size: 2rem; /* Reducir el tamaño del título de la sección de tecnologías */
+    font-size: 1.7rem;
   }
-
   .icon {
-    font-size: 2rem; /* Reducir el tamaño de los íconos en la sección de tecnologías */
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 768px) {
   .sobre-mi {
-    padding: 60px 10px; /* Reducir el padding en pantallas más pequeñas */
+    padding: 40px 0 20px 0;
   }
-
   .sobre-mi .container {
-    flex-direction: column; /* Colocar la imagen y el texto en columna */
-    height: auto; /* Ajustar la altura automática */
-    gap: 30px; /* Reducir el espacio entre el texto y la imagen */
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
-
+  .profile-logo {
+    width: 160px;
+    height: 160px;
+  }
   .sobre-mi .text h2 {
-    font-size: 2.5rem; /* Reducir aún más el tamaño del título */
+    font-size: 2rem;
+    text-align: center;
   }
-
   .sobre-mi .text p {
-    font-size: 1rem; /* Reducir aún más el tamaño del texto */
+    font-size: 1rem;
+    text-align: center;
   }
-
-  .tecnologias h2 {
-    font-size: 1.8rem; /* Reducir el tamaño del título de la sección de tecnologías */
-  }
-
-  .icon {
-    font-size: 1.8rem; /* Reducir el tamaño de los íconos en la sección de tecnologías */
-  }
-
   .sobre-mi .button-group {
-    display: flex;
-    justify-content: center; /* Asegura que los botones estén centrados */
-    gap: 10px; /* Espacio entre los botones */
+    justify-content: center;
+    gap: 10px;
   }
-
-  .sobre-mi .btn {
-    font-size: 0.9rem; /* Reducir el tamaño de los botones */
-    padding: 8px 16px; /* Ajustar el padding de los botones */
+  .tecnologias h2 {
+    font-size: 1.3rem;
+  }
+  .iconos-tecnologias {
+    gap: 18px;
+  }
+  .icon {
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 480px) {
   .sobre-mi {
-    padding: 10px 15px; /* Reducir el padding en pantallas muy pequeñas */
+    padding: 28px 0 10px 0;
+    margin-top: 60px;
   }
-
-  .sobre-mi .container {
-    gap: 12px; /* Reducir el espacio entre el texto y la imagen */
+  .profile-logo {
+    width: 110px;
+    height: 110px;
   }
-
   .sobre-mi .text h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .sobre-mi .text p {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-
-  .tecnologias h2 {
-    font-size: 1.6rem; /* Reducir el tamaño del título de la sección de tecnologías */
-  }
-
-  .icon {
     font-size: 1.3rem;
   }
-
-  .sobre-mi .button-group {
-    display: flex;
-    justify-content: center; /* Mantener los botones centrados */
-    gap: 5px; /* Reducir aún más el espacio entre los botones */
+  .sobre-mi .text p {
+    font-size: 0.9rem;
   }
-
+  .tecnologias h2 {
+    font-size: 1rem;
+  }
+  .iconos-tecnologias {
+    gap: 10px;
+  }
+  .icon {
+    font-size: 1.2rem;
+  }
+  .sobre-mi .button-group {
+    gap: 6px;
+  }
   .sobre-mi .btn {
-    font-size: 0.8rem; /* Ajustar el tamaño de los botones en pantallas muy pequeñas */
-    padding: 6px 12px; /* Ajustar el padding de los botones */
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
 }

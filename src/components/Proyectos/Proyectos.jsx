@@ -2,7 +2,7 @@ import "./Proyectos.css";
 import img from "../../assets/img/img-proyectos/N1.webp";
 import img1 from "../../assets/img/img-proyectos/N8.webp";
 import img2 from "../../assets/img/img-proyectos/N2.webp";
-import img3 from "../../assets/img/img-proyectos/unqui2.webp";
+// import img3 from "../../assets/img/img-proyectos/unqui2.webp";
 import img4 from "../../assets/img/img-proyectos/N6.webp";
 import img5 from "../../assets/img/img-proyectos/N5.webp";
 // import img6 from "../../assets/img/img-proyectos/mi1.webp";
@@ -19,32 +19,6 @@ const Proyectos = () => {
         carrera como programador.
       </p>
       <div className="projects-container">
-        {/* Grand Alyson */}
-        <div className="project-card">
-          <img src={img} alt="grand alyson web" />
-          <div className="project-info">
-            <h3>Grand Alyson - Proyecto Inmobiliario</h3>
-            <p>
-              Landing page inmobiliaria desarrollada para Grand Alyson, proyecto
-              residencial orientado a mayores de 45 años. El sitio destaca su
-              propuesta de vida, ubicación y amenities, transmitiendo calidez y
-              confianza para facilitar consultas y ventas.
-            </p>
-            <div className="tech-logos">
-              <FaHtml5 className="icon icon-html" />
-              <FaCss3Alt className="icon icon-css" />
-              <FaJs className="icon icon-js" />
-              <FaReact className="icon icon-react" />
-            </div>
-            <a
-              href="https://experienciagrandalyson.com.ar/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Sitio Web
-            </a>
-          </div>
-        </div>
         {/* Fede */}
         <div className="project-card">
           <img src={img2} alt="Portfolio del realizador audiovisual" />
@@ -64,6 +38,32 @@ const Proyectos = () => {
             </div>
             <a
               href="https://federementeria.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Sitio Web
+            </a>
+          </div>
+        </div>
+        {/* Grand Alyson */}
+        <div className="project-card">
+          <img src={img} alt="grand alyson web" />
+          <div className="project-info">
+            <h3>Grand Alyson - Proyecto Inmobiliario</h3>
+            <p>
+              Landing page inmobiliaria desarrollada para Grand Alyson, proyecto
+              residencial orientado a mayores de 45 años. El sitio destaca su
+              propuesta de vida, ubicación y amenities, transmitiendo calidez y
+              confianza para facilitar consultas y ventas.
+            </p>
+            <div className="tech-logos">
+              <FaHtml5 className="icon icon-html" />
+              <FaCss3Alt className="icon icon-css" />
+              <FaJs className="icon icon-js" />
+              <FaReact className="icon icon-react" />
+            </div>
+            <a
+              href="https://experienciagrandalyson.com.ar/"
               target="_blank"
               rel="noreferrer"
             >
@@ -193,7 +193,7 @@ const Proyectos = () => {
           </div>
         </div>
         {/* Unqui Dev */}
-        <div className="project-card">
+        {/* <div className="project-card">
           <img src={img3} alt="Sitio web corporativo Unqui Devs" />
           <div className="project-info">
             <h3>Unqui Devs - Desarrollo Web</h3>
@@ -212,7 +212,7 @@ const Proyectos = () => {
               Sitio Web
             </a>
           </div>
-        </div>
+        </div> */}
         {/* M.I Logistica */}
         {/* <div className="project-card">
           <img src={img6} alt="M.I Logistica" />

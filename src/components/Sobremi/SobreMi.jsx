@@ -7,10 +7,9 @@ import {
   FaGithub,
   FaAws,
   FaNpm,
-} from "react-icons/fa"; // Importar los iconos
+} from "react-icons/fa";
 import "./SobreMi.css";
-// import img from "../../assets/img/1.webp";
-import img from "../../assets/img/1zon.webp";
+import img from "../../assets/img/logoB2.webp";
 import cv from "../../assets/pdf/FranciscoUncalApraiz.pdf";
 
 export const SobreMi = () => {
@@ -18,17 +17,16 @@ export const SobreMi = () => {
     <section className="sobre-mi" id="sobre-mi">
       <div className="container">
         <div className="image" data-aos="fade-left">
-          <img src={img} alt="Imagen de perfil" />
+          <img src={img} alt="Logo personal" className="profile-logo" />
         </div>
         <div className="text">
           <h2>Hola, soy Fran</h2>
           <p>
-            Desarrollador Frontend con más de 4 años de experiencia creando
-            sitios web a medida. Me especializo en desarrollar soluciones
-            funcionales, atractivas y pensadas para cada cliente. <br /> Me
-            caracterizo por tener una mirada analítica, buena comunicación y
-            enfoque en el trabajo en equipo, buscando siempre calidad, claridad
-            y eficiencia en cada proyecto.
+            Frontend Developer con más de 4 años creando sitios web modernos y
+            funcionales. Me apasiona transformar ideas en experiencias digitales
+            únicas, mezclando estilo, detalle y personalidad en cada proyecto.
+            Trabajo con foco en la colaboración y la innovación, porque cada
+            cliente y cada equipo merecen resultados que realmente destaquen.
           </p>
           <div className="button-group">
             <a href="/contacto" className="btn btn-primary">
@@ -40,8 +38,6 @@ export const SobreMi = () => {
           </div>
         </div>
       </div>
-
-      {/* Nueva sección de Tecnologías */}
       <div className="tecnologias">
         <h2>Habilidades Técnicas</h2>
         <div className="iconos-tecnologias">

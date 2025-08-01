@@ -50,7 +50,7 @@ const Navbar = () => {
       </nav>
       <div className="social-icons-nav">
         <a
-          href="https://www.instagram.com/franuncalap/"
+          href="https://www.instagram.com/franuncal.dev/"
           target="_blank"
           rel="noopener noreferrer"
         >
