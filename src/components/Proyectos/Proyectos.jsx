@@ -150,27 +150,7 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
-        {/* Bodas */}
-        {/* <div className="project-card">
-          <img src={img} alt="Bodas Click" />
-          <div className="project-info">
-            <h3>Bodas Click</h3>
-            <p>
-              Aplicación web diseñada para facilitar la planificación de bodas.
-              Los usuarios pueden gestionar listas de invitados, organizar
-              eventos y coordinar todos los detalles de una boda desde una única
-              plataforma.
-            </p>
-            <div className="tech-logos">
-              <FaHtml5 className="icon icon-html" />
-              <FaCss3Alt className="icon icon-css" />
-              <FaJs className="icon icon-js" />
-            </div>
-            <a href="https://bodas.click/" target="_blank" rel="noreferrer">
-              Sitio Web
-            </a>
-          </div>
-        </div> */}
+
         {/* Chand Mantra */}
         <div className="project-card">
           <img src={img1} alt="Chand Mantra" />
@@ -192,52 +172,6 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
-        {/* Unqui Dev */}
-        {/* <div className="project-card">
-          <img src={img3} alt="Sitio web corporativo Unqui Devs" />
-          <div className="project-info">
-            <h3>Unqui Devs - Desarrollo Web</h3>
-            <p>
-              Sitio web de Unqui Devs, dedicado a ofrecer soluciones web
-              personalizadas. Presenta proyectos realizados para diversos
-              clientes, con énfasis en diseño atractivo y desarrollo funcional
-              de sitios web a medida.
-            </p>
-            <div className="tech-logos">
-              <FaHtml5 className="icon icon-html" />
-              <FaCss3Alt className="icon icon-css" />
-              <FaJs className="icon icon-js" />
-            </div>
-            <a href="https://unquidev.com/" target="_blank" rel="noreferrer">
-              Sitio Web
-            </a>
-          </div>
-        </div> */}
-        {/* M.I Logistica */}
-        {/* <div className="project-card">
-          <img src={img6} alt="M.I Logistica" />
-          <div className="project-info">
-            <h3>M.I Logística y Comercio Internacional</h3>
-            <p>
-              Desarrollo del sitio web de Mi Logística Internacional presenta
-              los servicios de transporte y logística de la empresa, facilitando
-              el contacto y la información clave.
-            </p>
-            <div className="tech-logos">
-              <FaHtml5 className="icon icon-html" />
-              <FaCss3Alt className="icon icon-css" />
-              <FaJs className="icon icon-js" />
-              <FaReact className="icon icon-react" />
-            </div>
-            <a
-              href="https://milogisticainternacional.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Sitio Web
-            </a>
-          </div>
-        </div> */}
       </div>
     </section>
   );

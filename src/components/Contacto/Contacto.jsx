@@ -21,13 +21,22 @@ export const Contacto = () => {
         <div className="social-icons">
           <div className="social-item">
             <a
+              href="https://wa.me/2324469630"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-whatsapp"
+            >
+              <FaWhatsapp />
+            </a>
+          </div>
+          <div className="social-item">
+            <a
               href="mailto:franuncal@gmail.com"
               target="_blank"
               rel="noreferrer"
               className="icon-email"
             >
               <FaEnvelope />
-              <span>franuncal@gmail.com</span>
             </a>
           </div>
           <div className="social-item">
@@ -38,7 +47,6 @@ export const Contacto = () => {
               className="icon-linkedin"
             >
               <FaLinkedin />
-              <span>https://www.linkedin.com/in/franuncal/</span>
             </a>
           </div>
           <div className="social-item">
@@ -49,18 +57,6 @@ export const Contacto = () => {
               className="icon-instagram"
             >
               <FaInstagram />
-              <span>https://instagram.com/franuncal.dev/</span>
-            </a>
-          </div>
-          <div className="social-item">
-            <a
-              href="https://wa.me/2324469630"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-whatsapp"
-            >
-              <FaWhatsapp />
-              <span>https://wa.me/2324469630</span>
             </a>
           </div>
         </div>

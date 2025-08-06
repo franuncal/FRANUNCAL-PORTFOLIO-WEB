@@ -1,112 +1,127 @@
 .contact-page {
-  background-color: var(--text-color);
-  color: #c4b9b9;
+  background-color: #000;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: 0 0;
+  color: #f6f6f6;
   padding: 5rem 1rem;
   margin-top: 100px;
-  min-height: calc(100vh - 200px); /* Ajusta según la altura del footer */
+  min-height: calc(100vh - 200px);
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact-container {
   display: flex;
-  justify-content: center; /* Centra el contenido en pantallas grandes */
-  flex-direction: column; /* Asegura que el contenido se apile verticalmente */
-  align-items: center; /* Centra horizontalmente */
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-info {
-  text-align: center; /* Alineación a centro para mayor uniformidad */
+  text-align: center;
   margin-bottom: 2rem;
 }
 
 .contact-info h2 {
-  color: var(--bg-color);
   font-size: 3.1rem;
   margin-bottom: 1rem;
+  font-weight: 500;
+  color: #f6f6f6;
+  position: relative;
 }
 
+/* Línea decorativa animada bajo el título */
+.contact-info h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1.5px;
+  background-color: #f6f6f6;
+  margin: 6px auto 0;
+  animation: expand-line 1.4s ease forwards;
+  transform-origin: center;
+  opacity: 0.8;
+}
+
+/* Descripción */
 .contact-description {
   max-width: 700px;
-  color: #666;
+  color: #bbb;
   letter-spacing: 0.05rem;
-  font-size: 18px;
+  font-size: 1.15rem;
   margin-bottom: 2rem;
+  line-height: 1.7;
+  text-align: center;
 }
 
+/* Íconos sociales - solo íconos horizontales */
 .social-icons {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.social-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.2rem;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .social-item a {
-  display: flex; /* Asegura que el enlace sea un contenedor flex */
-  align-items: center; /* Centra verticalmente el icono y el texto */
-  text-decoration: none; /* Elimina el subrayado del texto */
-  color: var(--bg-color); /* Color del texto por defecto */
-  font-size: 2rem; /* Tamaño del ícono */
-  transition: color 0.3s ease; /* Suave transición al hover */
-}
-
-.icon-instagram:hover {
-  color: #e1306c; /* Color original de Instagram */
-}
-
-.icon-whatsapp:hover {
-  color: #25d366; /* Color original de WhatsApp */
-}
-
-.icon-linkedin:hover {
-  color: #0077b5; /* Color original de LinkedIn */
-}
-
-.icon-email:hover {
-  color: #c32aa3; /* Color original del ícono de email (opcional) */
+  color: #f6f6f6;
+  font-size: 2rem;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .social-item a:hover {
   transform: scale(1.1);
+  opacity: 1;
 }
 
-.social-item span {
-  margin-left: 10px; /* Espacio entre el icono y el texto */
-  font-size: 1.2rem; /* Tamaño de fuente para la URL */
-  color: #666; /* Color del texto de la URL */
-  vertical-align: middle; /* Alinea verticalmente con el icono */
+/* Animación línea */
+@keyframes expand-line {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0.8;
+  }
 }
 
-/* Media Queries para pantallas pequeñas */
+/* Responsive */
 @media (max-width: 768px) {
   .contact-container {
-    flex-direction: column; /* Cambia la dirección a columna */
-    align-items: center; /* Centra los elementos en la columna */
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact-info {
-    text-align: center; /* Centra el texto en pantallas pequeñas */
-    margin-bottom: 2rem; /* Espacio entre el texto y los iconos */
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+    text-align: center;
   }
 
   .social-icons {
-    align-items: flex-start; /* Centra horizontalmente los iconos y enlaces */
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    flex-wrap: wrap;
+    gap: 16px;
   }
 
-  .social-item a {
-    font-size: 1.5rem; /* Tamaño de los iconos en móviles */
-  }
-
-  .social-item span {
-    font-size: 1rem; /* Tamaño de la URL en móviles */
+  .social-icons a {
+    width: 28px;
+    height: 28px;
   }
 }

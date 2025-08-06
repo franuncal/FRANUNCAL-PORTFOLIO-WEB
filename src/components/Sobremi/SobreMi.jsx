@@ -10,35 +10,36 @@ import {
 } from "react-icons/fa";
 import "./SobreMi.css";
 import img from "../../assets/img/logoB2.webp";
-import cv from "../../assets/pdf/FranciscoUncalApraiz.pdf";
+import pr from "../../assets/pdf/Propuesta de Proyecto.pdf";
 
 export const SobreMi = () => {
   return (
     <section className="sobre-mi" id="sobre-mi">
-      <div className="container">
-        <div className="image" data-aos="fade-left">
+      <div className="container sobre-mi-container">
+        <div className="image" data-aos="fade-right">
           <img src={img} alt="Logo personal" className="profile-logo" />
         </div>
-        <div className="text">
+        <div className="text" data-aos="fade-left">
           <h2>Hola, soy Fran</h2>
+          <h3>Frontend Developer</h3>
           <p>
-            Frontend Developer con más de 4 años creando sitios web modernos y
-            funcionales. Me apasiona transformar ideas en experiencias digitales
-            únicas, mezclando estilo, detalle y personalidad en cada proyecto.
-            Trabajo con foco en la colaboración y la innovación, porque cada
-            cliente y cada equipo merecen resultados que realmente destaquen.
+            Creando sitios que se ven bien y funcionan mejor. Transformando
+            ideas en experiencias digitales con estilo, detalle y mucha
+            personalidad. Me enfoco en crear webs que realmente destaquen y
+            conecten con quienes las visitan.
           </p>
           <div className="button-group">
             <a href="/contacto" className="btn btn-primary">
               Contáctame
             </a>
-            <a href={cv} download className="btn btn-secondary">
-              Descargar CV
+            <a href={pr} download className="btn btn-secondary">
+              Propuesta de Proyecto
             </a>
           </div>
         </div>
       </div>
-      <div className="tecnologias">
+
+      <div className="tecnologias" data-aos="fade-up">
         <h2>Habilidades Técnicas</h2>
         <div className="iconos-tecnologias">
           <FaHtml5 className="icon icon-html" />

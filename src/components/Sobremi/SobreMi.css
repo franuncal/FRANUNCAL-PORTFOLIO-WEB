@@ -1,25 +1,32 @@
 .sobre-mi {
-  background-color: #f9f9f9;
+  background-color: #000; /* Fondo negro */
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: 0 0;
   padding: 80px 0 40px 0;
-  position: relative;
   margin-top: 80px;
-  overflow-x: hidden; /* <-- Solución clave */
+  overflow-x: hidden;
+  color: #f6f6f6;
 }
 
-.sobre-mi .container {
+.sobre-mi-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
   flex-wrap: wrap;
-  box-sizing: border-box;
+  gap: 40px;
 }
 
-.sobre-mi .image {
+.image {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,74 +38,118 @@
   border-radius: 50%;
   border: 3px solid var(--second-bg-color);
   object-fit: cover;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  background: #fff;
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.1);
+  background: #f6f6f6;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .profile-logo:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.15);
 }
 
-.sobre-mi .text {
+.text {
   flex: 1;
   min-width: 260px;
+  max-width: 560px;
 }
 
-.sobre-mi .text h2 {
-  color: var(--bg-color);
+.text h2 {
+  color: #f6f6f6;
   font-size: 3rem;
-  margin-bottom: 18px;
-  font-weight: 700;
+  margin-bottom: 8px;
+  font-weight: 300;
 }
 
-.sobre-mi .text p {
-  color: #444;
+.sobre-mi h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #f6f6f6;
+  margin-top: 6px;
+  animation: growLine 1s ease-out forwards;
+  transform-origin: left;
+}
+
+/* Animaciones */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 60px;
+    opacity: 1;
+  }
+}
+
+.text h3 {
+  color: #f6f6f6;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+
+.text p {
+  color: #ddd;
   font-size: 1.15rem;
   line-height: 1.7;
   margin-bottom: 10px;
+  font-weight: 100;
 }
 
-.sobre-mi .button-group {
+.button-group {
   margin-top: 24px;
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
 }
 
-.sobre-mi .btn {
+.btn {
   font-family: "Akatab", sans-serif;
   padding: 10px 24px;
   font-size: 1rem;
   border-radius: 6px;
   text-decoration: none;
-  color: #fff;
+  color: #f6f6f6;
   background: var(--second-bg-color);
   border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.06);
   transition: transform 0.3s, filter 0.3s;
 }
 
-.sobre-mi .btn:hover {
-  background: #fff;
+.btn:hover {
+  background: #f6f6f6;
   color: #111;
   border: 1.5px solid #111;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.08);
   filter: none;
 }
 
+/* === TECNOLOGÍAS (versión original) === */
+
 .tecnologias {
   text-align: center;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 
 .tecnologias h2 {
   font-size: 2.2rem;
-  color: var(--bg-color);
+  color: #f6f6f6;
   margin-bottom: 18px;
-  font-weight: 600;
+  font-weight: 200;
   padding-top: 2rem;
 }
 
@@ -112,7 +163,7 @@
 
 .icon {
   font-size: 2.3rem;
-  color: var(--bg-color);
+  color: #f6f6f6;
   transition: color 0.3s, transform 0.3s;
 }
 
@@ -132,7 +183,7 @@
   color: #f1502f;
 }
 .icon-github:hover {
-  color: #181717;
+  color: #fff;
 }
 .icon-aws:hover {
   color: #ff9900;
@@ -145,62 +196,59 @@
   transform: scale(1.18);
 }
 
-/* Responsivo */
+/* === RESPONSIVE === */
+
 @media (max-width: 1024px) {
-  .sobre-mi {
-    padding: 60px 0 30px 0;
-  }
-  .sobre-mi .container {
-    gap: 36px;
-  }
   .profile-logo {
     width: 200px;
     height: 200px;
   }
-  .sobre-mi .text h2 {
+
+  .text h2 {
     font-size: 2.4rem;
   }
-  .tecnologias h2 {
-    font-size: 1.7rem;
+
+  .text p {
+    font-size: 1.05rem;
   }
-  .icon {
+
+  .tecnologias h2 {
     font-size: 1.8rem;
+  }
+
+  .icon {
+    font-size: 1.9rem;
   }
 }
 
 @media (max-width: 768px) {
-  .sobre-mi {
-    padding: 40px 0 20px 0;
-  }
-  .sobre-mi .container {
+  .sobre-mi-container {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    padding: 40px 20px;
+    gap: 36px;
   }
-  .profile-logo {
-    width: 160px;
-    height: 160px;
-  }
-  .sobre-mi .text h2 {
-    font-size: 2rem;
+
+  .text h2 {
+    font-size: 2.2rem;
     text-align: center;
   }
-  .sobre-mi .text p {
-    font-size: 1rem;
+
+  .text h3,
+  .text p {
     text-align: center;
   }
-  .sobre-mi .button-group {
+
+  .button-group {
     justify-content: center;
-    gap: 10px;
   }
-  .tecnologias h2 {
-    font-size: 1.3rem;
+
+  .tecnologias {
+    margin-top: 60px;
   }
-  .iconos-tecnologias {
-    gap: 18px;
-  }
+
   .icon {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -209,30 +257,34 @@
     padding: 28px 0 10px 0;
     margin-top: 60px;
   }
+
   .profile-logo {
     width: 110px;
     height: 110px;
   }
-  .sobre-mi .text h2 {
+
+  .text h2 {
+    font-size: 1.6rem;
+  }
+
+  .text h3 {
+    font-size: 1.1rem;
+  }
+
+  .text p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .icon {
     font-size: 1.3rem;
   }
-  .sobre-mi .text p {
-    font-size: 0.9rem;
-  }
+
   .tecnologias h2 {
-    font-size: 1rem;
-  }
-  .iconos-tecnologias {
-    gap: 10px;
-  }
-  .icon {
-    font-size: 1.2rem;
-  }
-  .sobre-mi .button-group {
-    gap: 6px;
-  }
-  .sobre-mi .btn {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+    font-size: 1.4rem;
   }
 }
