@@ -10,7 +10,7 @@
   background-position: 0 0;
   color: #f6f6f6;
   padding: 5rem 1rem;
-  margin-top: 100px;
+  margin-top: 10px;
   min-height: calc(100vh - 200px);
   box-sizing: border-box;
   position: relative;
@@ -37,7 +37,7 @@
 .contact-info h2 {
   font-size: 3.1rem;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 300;
   color: #f6f6f6;
   position: relative;
 }

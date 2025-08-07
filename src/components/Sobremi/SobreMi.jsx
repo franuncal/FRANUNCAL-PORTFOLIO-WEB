@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 import "./SobreMi.css";
 import img from "../../assets/img/logoB2.webp";
-import pr from "../../assets/pdf/Propuesta de Proyecto.pdf";
+// import pr from "../../assets/pdf/Propuesta de Proyecto.pdf";
 
 export const SobreMi = () => {
   return (
@@ -23,18 +23,18 @@ export const SobreMi = () => {
           <h2>Hola, soy Fran</h2>
           <h3>Frontend Developer</h3>
           <p>
-            Creando sitios que se ven bien y funcionan mejor. Transformando
-            ideas en experiencias digitales con estilo, detalle y mucha
-            personalidad. Me enfoco en crear webs que realmente destaquen y
-            conecten con quienes las visitan.
+            Con más de 4 años de experiencia desarrollando sitios web
+            atractivos, funcionales y con identidad. Transformo ideas en
+            experiencias digitales sólidas, enfocadas en el detalle, la estética
+            y la conexión real con cada usuario.
           </p>
           <div className="button-group">
             <a href="/contacto" className="btn btn-primary">
               Contáctame
             </a>
-            <a href={pr} download className="btn btn-secondary">
+            {/* <a href={pr} download className="btn btn-secondary">
               Propuesta de Proyecto
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

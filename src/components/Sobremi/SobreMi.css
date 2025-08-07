@@ -9,7 +9,7 @@
   background-size: 30px 30px;
   background-position: 0 0;
   padding: 80px 0 40px 0;
-  margin-top: 80px;
+  margin-top: 10px;
   overflow-x: hidden;
   color: #f6f6f6;
 }
@@ -67,9 +67,9 @@
   width: 60px;
   height: 2px;
   background-color: #f6f6f6;
-  margin-top: 6px;
+  margin: 6px auto 0 auto; /* centrado horizontal */
   animation: growLine 1s ease-out forwards;
-  transform-origin: left;
+  transform-origin: center; /* cambia a 'center' para que la animación crezca desde el centro */
 }
 
 /* Animaciones */
@@ -123,23 +123,22 @@
   font-size: 1rem;
   border-radius: 6px;
   text-decoration: none;
-  color: #f6f6f6;
-  background: var(--second-bg-color);
+  background: #f6f6f6;
+  color: #111;
   border: none;
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.06);
   transition: transform 0.3s, filter 0.3s;
 }
 
 .btn:hover {
-  background: #f6f6f6;
-  color: #111;
-  border: 1.5px solid #111;
+  color: #f6f6f6;
+  background: var(--second-bg-color);
+  border: 1.5px solid #f6f6f6;
   transform: scale(1.08);
   filter: none;
 }
 
 /* === TECNOLOGÍAS (versión original) === */
-
 .tecnologias {
   text-align: center;
   margin-top: 64px;

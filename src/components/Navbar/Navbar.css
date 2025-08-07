@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 0.75rem 1.5rem;
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: "akatab", sans-serif;
@@ -17,8 +17,8 @@ header {
 .logo {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
 }
 
 .nav {
@@ -42,7 +42,7 @@ header {
   text-decoration: none;
   color: var(--text-color);
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .nav-list .inicio {
@@ -50,7 +50,7 @@ header {
   text-underline-offset: 0.6rem;
   color: var(--text-color);
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .social-icons-nav {
@@ -68,7 +68,8 @@ header {
 /* Estilos del menú hamburguesa */
 .menu-toggle {
   position: absolute;
-  left: 1rem;
+  right: 1rem;
+  left: auto;
   display: none;
   flex-direction: column;
   cursor: pointer;
@@ -85,7 +86,7 @@ header {
 /* Estilos responsivos */
 @media (max-width: 768px) {
   header {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
   }
 
   .nav {
@@ -122,9 +123,9 @@ header {
 
   .logo {
     flex: 1;
-    text-align: center;
+    text-align: start;
     font-size: 1.5rem;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 
   .social-icons-nav {
