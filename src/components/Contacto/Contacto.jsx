@@ -60,6 +60,9 @@ export const Contacto = () => {
             </a>
           </div>
         </div>
+        {/* <a href="/projects" className="btn btn-primary">
+          Propuesta de Proyecto
+        </a> */}
       </div>
     </div>
   );

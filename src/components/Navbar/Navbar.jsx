@@ -17,59 +17,60 @@ const Navbar = () => {
 
   return (
     <header>
-      <a href="/" className="logo">
-        {"{ F }"}
-      </a>
-      <div
-        className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
-        onClick={toggleMenu}
-      >
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
-      <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
-        <ul className="nav-list">
-          <li>
-            <a className="inicio" href="/" onClick={closeMenu}>
-              Sobre Mi
-            </a>
-          </li>
-
-          <li>
-            <a href="/projects" onClick={closeMenu}>
-              Proyectos
-            </a>
-          </li>
-          <li>
-            <Link to="/contacto" onClick={closeMenu}>
-              Contacto
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div className="social-icons-nav">
-        <a
-          href="https://www.instagram.com/franuncal.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram />
+      <div className="navbar-inner">
+        <a href="/" className="logo">
+          {"{ F }"}
         </a>
-        <a
-          href="mailto:franuncal@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
         >
-          <FaEnvelope />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/franuncal/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaLinkedin />
-        </a>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+        <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
+          <ul className="nav-list">
+            <li>
+              <a className="inicio" href="/" onClick={closeMenu}>
+                Sobre Mi
+              </a>
+            </li>
+            <li>
+              <a href="/projects" onClick={closeMenu}>
+                Proyectos
+              </a>
+            </li>
+            <li>
+              <Link to="/contacto" onClick={closeMenu}>
+                Contacto
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="social-icons-nav">
+          <a
+            href="https://www.instagram.com/franuncal.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="mailto:franuncal@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaEnvelope />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/franuncal/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
       </div>
     </header>
   );
