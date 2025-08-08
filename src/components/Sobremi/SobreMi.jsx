@@ -23,10 +23,10 @@ export const SobreMi = () => {
           <h2>Hola, soy Fran</h2>
           <h3>Frontend Developer</h3>
           <p>
-            Más de 4 años de experiencia desarrollando sitios web atractivos,
-            funcionales y con identidad. Transformo ideas en experiencias
-            digitales sólidas, enfocadas en el detalle, la estética y la
-            conexión real con cada usuario.
+            Más de 4 años de experiencia en el desarrollo de sitios web
+            atractivos, funcionales y con identidad. Transformo ideas en
+            experiencias digitales sólidas, enfocadas en los detalles, la
+            estética y una conexión real con cada usuario.
           </p>
           <div className="button-group">
             <a href="/contacto" className="btn btn-primary">
