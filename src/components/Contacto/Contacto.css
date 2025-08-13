@@ -1,17 +1,7 @@
 .contact-page {
-  background-color: #000;
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.03) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 30px 30px;
-  background-position: 0 0;
-  color: #f6f6f6;
   padding: 160px 0 40px 0;
-  min-height: calc(100vh - 200px);
-  box-sizing: border-box;
+  color: #f6f6f6;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }

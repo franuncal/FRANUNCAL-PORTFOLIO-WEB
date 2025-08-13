@@ -2,25 +2,87 @@ import "./Proyectos.css";
 import img from "../../assets/img/img-proyectos/N1.webp";
 import img1 from "../../assets/img/img-proyectos/N8.webp";
 import img2 from "../../assets/img/img-proyectos/N2.webp";
-// import img3 from "../../assets/img/img-proyectos/unqui2.webp";
 import img4 from "../../assets/img/img-proyectos/N6.webp";
 import img5 from "../../assets/img/img-proyectos/N5.webp";
-// import img6 from "../../assets/img/img-proyectos/mi1.webp";
 import img7 from "../../assets/img/img-proyectos/N3.webp";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa"; // Importa los íconos de react-icons
+gsap.registerPlugin(ScrollTrigger);
 
 const Proyectos = () => {
+  const titleRef = useRef(null);
+  const descRef = useRef(null);
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    // Título: Fade in desde arriba
+    gsap.fromTo(
+      titleRef.current,
+      { y: -40, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 90%",
+        },
+      }
+    );
+
+    // Descripción: Fade in desde abajo
+    gsap.fromTo(
+      descRef.current,
+      { y: 40, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: descRef.current,
+          start: "top 90%",
+        },
+      }
+    );
+
+    // Tarjetas de proyectos: Zoom + stagger
+    gsap.fromTo(
+      cardsRef.current,
+      { scale: 0.7, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 0.7,
+        stagger: 0.15,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: cardsRef.current[0],
+          start: "top 90%",
+        },
+      }
+    );
+  }, []);
+
+  // Helper para refs de tarjetas
+  const setCardRef = (el, i) => {
+    cardsRef.current[i] = el;
+  };
+
   return (
     <section id="projects" className="projects-section">
-      <h2>Mis proyectos</h2>
-      <p>
+      <h2 ref={titleRef}>Mis proyectos</h2>
+      <p ref={descRef}>
         Estos son algunos de los proyectos que he creado a lo largo de mi
         carrera como programador.
       </p>
       <div className="projects-container">
         {/* Fede */}
-        <div className="project-card">
+        <div className="project-card" ref={(el) => setCardRef(el, 0)}>
           <img src={img2} alt="Portfolio del realizador audiovisual" />
           <div className="project-info">
             <h3>FR - Realizador Audiovisual</h3>
@@ -46,7 +108,7 @@ const Proyectos = () => {
           </div>
         </div>
         {/* Grand Alyson */}
-        <div className="project-card">
+        <div className="project-card" ref={(el) => setCardRef(el, 1)}>
           <img src={img} alt="grand alyson web" />
           <div className="project-info">
             <h3>Grand Alyson - Proyecto Inmobiliario</h3>
@@ -72,7 +134,7 @@ const Proyectos = () => {
           </div>
         </div>
         {/* Silvestre */}
-        <div className="project-card">
+        <div className="project-card" ref={(el) => setCardRef(el, 2)}>
           <img src={img5} alt="Silvestre DDL" />
           <div className="project-info">
             <h3>Silvestre - Dulce de Leche</h3>
@@ -98,7 +160,7 @@ const Proyectos = () => {
           </div>
         </div>
         {/* Menta y Limon */}
-        <div className="project-card">
+        <div className="project-card" ref={(el) => setCardRef(el, 3)}>
           <img src={img7} alt="Alquileres Temporales" />
           <div className="project-info">
             <h3>Menta&Limon Cumbia</h3>
@@ -125,7 +187,7 @@ const Proyectos = () => {
           </div>
         </div>
         {/* Temistocles */}
-        <div className="project-card">
+        <div className="project-card" ref={(el) => setCardRef(el, 4)}>
           <img src={img4} alt="Cabanas Temistocles" />
           <div className="project-info">
             <h3>Cabañas Temistocles</h3>
@@ -150,9 +212,8 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
-
         {/* Chand Mantra */}
-        <div className="project-card">
+        <div className="project-card" ref={(el) => setCardRef(el, 5)}>
           <img src={img1} alt="Chand Mantra" />
           <div className="project-info">
             <h3>Chand Mantra - Espejos de Diseño</h3>

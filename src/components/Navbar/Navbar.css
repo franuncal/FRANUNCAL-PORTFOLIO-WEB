@@ -4,18 +4,18 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #000; /* Fondo negro */
+  height: 56px;
+  background-color: #000;
   color: var(--text-color);
   font-family: "akatab", sans-serif;
   z-index: 1000;
-  padding: 0.4rem 0; /* Navbar más fino */
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Contenedor interno para centrar y limitar ancho */
+/* Contenedor interno */
 .navbar-inner {
   width: 100%;
   max-width: 1200px;
@@ -25,6 +25,7 @@ header {
   align-items: center;
   padding: 0 1.5rem;
   box-sizing: border-box;
+  height: 100%;
 }
 
 /* Logo */
@@ -33,6 +34,13 @@ header {
   color: var(--text-color);
   font-size: 1.3rem;
   letter-spacing: 1px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.logo:hover {
+  color: var(--main-color);
+  transform: scale(1.08);
 }
 
 /* Navegación */
@@ -40,6 +48,8 @@ header {
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-list {
@@ -47,18 +57,28 @@ header {
   display: flex;
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 
 .nav-list li {
   margin: 0 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list li a,
 .nav-list .inicio {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.2rem;
-  font-weight: 200;
+  font-size: 1.08rem;
+  font-weight: 400;
+  transition: color 0.3s;
+  padding: 0.2rem 0.4rem;
+}
+
+.nav-list li a:hover,
+.nav-list .inicio:hover {
+  color: var(--main-color);
 }
 
 .nav-list .inicio {
@@ -71,12 +91,19 @@ header {
   cursor: pointer;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .social-icons-nav a {
   margin: 0 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--text-color);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons-nav a:hover {
+  color: var(--main-color);
+  transform: scale(1.12);
 }
 
 /* Menú hamburguesa */
@@ -87,6 +114,7 @@ header {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  z-index: 1100;
 }
 
 .menu-toggle .bar {
@@ -104,25 +132,37 @@ header {
   }
 }
 
+@media (max-width: 900px) {
+  .navbar-inner {
+    max-width: 98vw;
+    padding: 0 0.5rem;
+  }
+  .nav-list li {
+    margin: 0 0.6rem;
+  }
+}
+
 @media (max-width: 768px) {
   header {
-    padding: 0.4rem 0;
+    height: 48px;
   }
 
   .navbar-inner {
     padding: 0 0.5rem;
+    height: 100%;
   }
 
   .nav {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 48px;
     left: 0;
     width: 100%;
     background-color: #000;
     flex-direction: column;
     align-items: center;
     z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   }
 
   .nav.active {
@@ -134,21 +174,22 @@ header {
     padding: 0;
     margin: 0;
     width: 100%;
+    height: auto;
   }
 
   .nav-list li {
     margin: 1rem 0;
     text-align: center;
+    justify-content: center;
   }
 
   .nav-list li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0.5rem 0;
   }
 
   .logo {
-    flex: 1;
-    text-align: start;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .social-icons-nav {
