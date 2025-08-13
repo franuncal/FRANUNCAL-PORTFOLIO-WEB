@@ -20,6 +20,15 @@
   --textF-color: #623d7a;
 }
 
+.main-content {
+  min-height: calc(
+    100vh - 56px - 60px
+  ); /* 56px navbar + 60px footer (ajusta el 60px si tu footer es más alto o más bajo) */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 html {
   scroll-behavior: smooth;
   scrollbar-width: none;

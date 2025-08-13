@@ -139,49 +139,51 @@ export const SobreMi = () => {
   }, []);
 
   return (
-    <section className="sobre-mi" id="sobre-mi">
-      <div className="container sobre-mi-container">
-        <div className="image">
-          <img
-            ref={logoRef}
-            src={img}
-            alt="Logo personal"
-            className="profile-logo"
-          />
-        </div>
-        <div className="text">
-          <h2 ref={titleRef}>Hola, soy Fran</h2>
-          <h3 ref={subtitleRef}>Frontend Developer</h3>
-          <p ref={paragraphRef}>
-            Más de 4 años de experiencia en el desarrollo de sitios web
-            atractivos, funcionales y con identidad. Transformo ideas en
-            experiencias digitales sólidas, enfocadas en los detalles, la
-            estética y una conexión real con cada usuario.
-          </p>
-          <div className="button-group" ref={buttonsRef}>
-            <a href="/contacto" className="btn btn-primary">
-              Contáctame
-            </a>
-            <a href="/projects" className="btn btn-primary">
-              Proyectos
-            </a>
+    <div className="main-content">
+      <section className="sobre-mi" id="sobre-mi">
+        <div className="container sobre-mi-container">
+          <div className="image">
+            <img
+              ref={logoRef}
+              src={img}
+              alt="Logo personal"
+              className="profile-logo"
+            />
+          </div>
+          <div className="text">
+            <h2 ref={titleRef}>Hola, soy Fran</h2>
+            <h3 ref={subtitleRef}>Frontend Developer</h3>
+            <p ref={paragraphRef}>
+              Más de 4 años de experiencia en el desarrollo de sitios web
+              atractivos, funcionales y con identidad. Transformo ideas en
+              experiencias digitales sólidas, enfocadas en los detalles, la
+              estética y una conexión real con cada usuario.
+            </p>
+            <div className="button-group" ref={buttonsRef}>
+              <a href="/contacto" className="btn btn-primary">
+                Contáctame
+              </a>
+              <a href="/projects" className="btn btn-primary">
+                Proyectos
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="tecnologias">
-        <h2>Habilidades Técnicas</h2>
-        <div className="iconos-tecnologias" ref={iconsRef}>
-          <FaHtml5 className="icon icon-html" />
-          <FaCss3Alt className="icon icon-css" />
-          <FaJs className="icon icon-js" />
-          <FaReact className="icon icon-react" />
-          <FaGitAlt className="icon icon-git" />
-          <FaGithub className="icon icon-github" />
-          <FaAws className="icon icon-aws" />
-          <FaNpm className="icon icon-npm" />
+        <div className="tecnologias">
+          <h2>Habilidades Técnicas</h2>
+          <div className="iconos-tecnologias" ref={iconsRef}>
+            <FaHtml5 className="icon icon-html" />
+            <FaCss3Alt className="icon icon-css" />
+            <FaJs className="icon icon-js" />
+            <FaReact className="icon icon-react" />
+            <FaGitAlt className="icon icon-git" />
+            <FaGithub className="icon icon-github" />
+            <FaAws className="icon icon-aws" />
+            <FaNpm className="icon icon-npm" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };

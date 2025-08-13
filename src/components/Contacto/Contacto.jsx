@@ -68,61 +68,63 @@ export const Contacto = () => {
   }, []);
 
   return (
-    <div className="contact-page">
-      <div className="contact-container">
-        <div className="contact-info">
-          <h2 ref={titleRef}>Contacto</h2>
-          <p className="contact-description" ref={descRef}>
-            Si tienes alguna pregunta o deseas colaborar, no dudes en
-            contactarme a través de mis redes sociales o por email.
-          </p>
-        </div>
+    <div className="main-content">
+      <div className="contact-page">
+        <div className="contact-container">
+          <div className="contact-info">
+            <h2 ref={titleRef}>Contacto</h2>
+            <p className="contact-description" ref={descRef}>
+              Si tienes alguna pregunta o deseas colaborar, no dudes en
+              contactarme a través de mis redes sociales o por email.
+            </p>
+          </div>
 
-        <div className="social-icons" ref={iconsRef}>
-          <div className="social-item">
-            <a
-              href="https://wa.me/2324469630"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-whatsapp"
-            >
-              <FaWhatsapp />
-            </a>
+          <div className="social-icons" ref={iconsRef}>
+            <div className="social-item">
+              <a
+                href="https://wa.me/2324469630"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-whatsapp"
+              >
+                <FaWhatsapp />
+              </a>
+            </div>
+            <div className="social-item">
+              <a
+                href="mailto:franuncal@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-email"
+              >
+                <FaEnvelope />
+              </a>
+            </div>
+            <div className="social-item">
+              <a
+                href="https://www.linkedin.com/in/franuncal/"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-linkedin"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
+            <div className="social-item">
+              <a
+                href="https://www.instagram.com/franuncal.dev/"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-instagram"
+              >
+                <FaInstagram />
+              </a>
+            </div>
           </div>
-          <div className="social-item">
-            <a
-              href="mailto:franuncal@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-email"
-            >
-              <FaEnvelope />
-            </a>
-          </div>
-          <div className="social-item">
-            <a
-              href="https://www.linkedin.com/in/franuncal/"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-linkedin"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
-          <div className="social-item">
-            <a
-              href="https://www.instagram.com/franuncal.dev/"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-instagram"
-            >
-              <FaInstagram />
-            </a>
-          </div>
-        </div>
-        {/* <a href="/projects" className="btn btn-primary">
+          {/* <a href="/projects" className="btn btn-primary">
           Propuesta de Proyecto
         </a> */}
+        </div>
       </div>
     </div>
   );
