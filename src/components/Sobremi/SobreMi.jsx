@@ -161,10 +161,10 @@ export const SobreMi = () => {
             </p>
             <div className="button-group" ref={buttonsRef}>
               <a href="/contacto" className="btn btn-primary">
-                Contáctame
+                Contacto
               </a>
               <a href="/projects" className="btn btn-primary">
-                Proyectos
+                Portfolio
               </a>
             </div>
           </div>

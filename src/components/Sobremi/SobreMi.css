@@ -1,7 +1,7 @@
 .sobre-mi {
   padding: 160px 0 40px 0;
   color: #f6f6f6;
-  text-align: center;
+  text-align: start;
   position: relative;
   overflow: hidden;
 }
@@ -25,8 +25,8 @@
 }
 
 .profile-logo {
-  width: 260px;
-  height: 260px;
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   border: 3px solid var(--second-bg-color);
   object-fit: cover;
@@ -48,9 +48,9 @@
 
 .text h2 {
   color: #f6f6f6;
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin-bottom: 8px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .sobre-mi h3::after {
@@ -89,7 +89,7 @@
 
 .text h3 {
   color: #f6f6f6;
-  font-size: 1.4rem;
+  font-size: 2.8rem;
   font-weight: 300;
   margin-bottom: 18px;
 }
@@ -196,7 +196,7 @@
   }
 
   .text h2 {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .text p {
@@ -221,8 +221,9 @@
   }
 
   .text h2 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     text-align: center;
+    /* font-weight: 100; */
   }
 
   .text h3,
@@ -235,7 +236,7 @@
   }
 
   .tecnologias {
-    margin-top: 60px;
+    margin-top: 50px;
   }
 
   .icon {
@@ -246,20 +247,21 @@
 @media (max-width: 480px) {
   .sobre-mi {
     padding: 28px 0 10px 0;
-    margin-top: 60px;
+    margin-top: 50px;
   }
 
   .profile-logo {
-    width: 110px;
-    height: 110px;
+    width: 180px;
+    height: 180px;
   }
 
   .text h2 {
-    font-size: 1.6rem;
+    font-size: 3rem;
+    font-weight: 100;
   }
 
   .text h3 {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 
   .text p {

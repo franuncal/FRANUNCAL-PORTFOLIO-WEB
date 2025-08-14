@@ -79,7 +79,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="/projects" onClick={closeMenu}>
-                Proyectos
+                Portfolio
               </a>
             </li>
             <li>
