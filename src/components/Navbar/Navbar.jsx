@@ -20,42 +20,6 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  // useEffect(() => {
-  //   // Animación de entrada para el navbar
-  //   gsap.from(navbarRef.current, {
-  //     y: -60,
-  //     // opacity: 0,
-  //     duration: 1,
-  //     ease: "power2.out",
-  //   });
-  //   // Animación para el logo
-  //   gsap.from(logoRef.current, {
-  //     scale: 0.7,
-  //     // opacity: 0,
-  //     duration: 0.8,
-  //     delay: 0.3,
-  //     ease: "back.out(1.7)",
-  //   });
-  //   // Animación para los links
-  //   gsap.from(navListRef.current.children, {
-  //     y: -20,
-  //     // opacity: 0,
-  //     duration: 0.6,
-  //     stagger: 0.08,
-  //     delay: 0.5,
-  //     ease: "power2.out",
-  //   });
-  //   // Animación para los iconos sociales
-  //   gsap.from(socialRef.current.children, {
-  //     scale: 0.6,
-  //     // opacity: 0,
-  //     duration: 0.5,
-  //     stagger: 0.1,
-  //     delay: 0.7,
-  //     ease: "back.out(1.7)",
-  //   });
-  // }, []);
-
   return (
     <header ref={navbarRef}>
       <div className="navbar-inner">
@@ -80,6 +44,11 @@ const Navbar = () => {
             <li>
               <a href="/projects" onClick={closeMenu}>
                 Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="/proceso" onClick={closeMenu}>
+                Proceso
               </a>
             </li>
             <li>

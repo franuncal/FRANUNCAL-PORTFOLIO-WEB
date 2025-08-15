@@ -3,8 +3,9 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import Navbar from "./components/Navbar/Navbar";
 import { Home } from "./components/Home/Home"; // Nuevo componente Home
-import { Contacto } from "./components/Contacto/Contacto";
 import Projects from "./components/Proyectos/Proyectos";
+import Proceso from "./components/Proceso/Proceso"; // Nuevo componente Proceso
+import { Contacto } from "./components/Contacto/Contacto";
 import { Footer } from "./components/Footer/Footer";
 import "./App.css";
 
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/proceso" element={<Proceso />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer />

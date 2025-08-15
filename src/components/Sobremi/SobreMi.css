@@ -64,29 +64,6 @@
   transform-origin: center; /* cambia a 'center' para que la animación crezca desde el centro */
 }
 
-/* Animaciones */
-@keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes growLine {
-  from {
-    width: 0;
-    opacity: 0;
-  }
-  to {
-    width: 60px;
-    opacity: 1;
-  }
-}
-
 .text h3 {
   color: #f6f6f6;
   font-size: 2.8rem;
@@ -111,23 +88,23 @@
 
 .btn {
   font-family: "Akatab", sans-serif;
-  padding: 10px 24px;
-  font-size: 1rem;
-  border-radius: 6px;
+  display: inline-block;
+  background: linear-gradient(90deg, #fff 0%, #ededed 100%);
+  color: #232526;
+  font-size: 1.08rem;
+  font-weight: 500;
+  padding: 0.85rem 2.2rem;
+  border-radius: 32px;
   text-decoration: none;
-  background: #f6f6f6;
-  color: #111;
-  border: none;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.06);
-  transition: transform 0.3s, filter 0.3s;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  letter-spacing: 0.5px;
 }
 
 .btn:hover {
-  color: #f6f6f6;
-  background: var(--second-bg-color);
-  border: 1.5px solid #f6f6f6;
-  transform: scale(1.08);
-  filter: none;
+  background: linear-gradient(90deg, #6bceb2 0%, #43aaff 100%);
+  color: #fff;
+  transform: scale(1.05);
 }
 
 /* === TECNOLOGÍAS (versión original) === */
