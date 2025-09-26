@@ -5,6 +5,9 @@ import img2 from "../../assets/img/img-proyectos/N2.webp";
 import img4 from "../../assets/img/img-proyectos/N6.webp";
 import img5 from "../../assets/img/img-proyectos/N5.webp";
 import img7 from "../../assets/img/img-proyectos/N3.webp";
+import img8 from "../../assets/img/img-proyectos/N10.webp";
+import img9 from "../../assets/img/img-proyectos/N9.webp";
+import img10 from "../../assets/img/img-proyectos/N7.webp";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -13,6 +16,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const proyectosData = [
+  {
+    img: img8,
+    alt: "Bombicino Diagnostico",
+    title: "Sitio Web",
+    url: "https://www.bombicino.com.ar/",
+    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+  },
   {
     img: img2,
     alt: "Portfolio del realizador audiovisual",
@@ -54,6 +64,20 @@ const proyectosData = [
     title: "Landing Page",
     url: "https://chandmantra.com/",
     tech: [FaHtml5, FaCss3Alt, FaJs],
+  },
+  {
+    img: img9,
+    alt: "MI Logistica Internacional",
+    title: "Landing Page",
+    url: "https://milogisticainternacional.com/",
+    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+  },
+  {
+    img: img10,
+    alt: "Alquiler Esquel",
+    title: "Landing Page",
+    url: "https://alquileresquel.com/",
+    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
   },
 ];
 

@@ -21,9 +21,7 @@
 }
 
 .main-content {
-  min-height: calc(
-    100vh - 56px - 60px
-  ); /* 56px navbar + 60px footer (ajusta el 60px si tu footer es más alto o más bajo) */
+  min-height: calc(100vh - 56px - 60px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
