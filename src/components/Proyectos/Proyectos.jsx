@@ -7,7 +7,8 @@ import img5 from "../../assets/img/img-proyectos/N5.webp";
 import img7 from "../../assets/img/img-proyectos/N3.webp";
 import img8 from "../../assets/img/img-proyectos/N10.webp";
 import img9 from "../../assets/img/img-proyectos/N9.webp";
-import img10 from "../../assets/img/img-proyectos/N7.webp";
+// import img10 from "../../assets/img/img-proyectos/N7.webp";
+import img11 from "../../assets/img/img-proyectos/N11.webp";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -16,6 +17,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const proyectosData = [
+  {
+    img: img11,
+    alt: "SKY Las Grutas",
+    title: "Sitio Web",
+    url: "https://skylasgrutas.com/",
+    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+  },
   {
     img: img8,
     alt: "Bombicino Diagnostico",
@@ -72,13 +80,13 @@ const proyectosData = [
     url: "https://milogisticainternacional.com/",
     tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
   },
-  {
-    img: img10,
-    alt: "Alquiler Esquel",
-    title: "Landing Page",
-    url: "https://alquileresquel.com/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
-  },
+  // {
+  //   img: img10,
+  //   alt: "Alquiler Esquel",
+  //   title: "Landing Page",
+  //   url: "https://alquileresquel.com/",
+  //   tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+  // },
 ];
 
 const Proyectos = () => {
