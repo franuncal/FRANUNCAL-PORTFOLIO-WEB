@@ -6,9 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // === Imagenes de proyectos activos ===
 import agroTruckImg from "../../assets/img/img-proyectos/agrotruck.png";
-import mampaticaImg from "../../assets/img/img-proyectos/mampatica.png";
+// import mampaticaImg from "../../assets/img/img-proyectos/mampatica.png";
 import paladarImg from "../../assets/img/img-proyectos/paladar.png";
-// import puriImg from "../../assets/img/img-proyectos/puri.png";
+import puriImg from "../../assets/img/img-proyectos/puri.webp";
 
 // === Imagenes de proyectos finalizados ===
 import img from "../../assets/img/img-proyectos/N1.webp";
@@ -20,18 +20,27 @@ import img7 from "../../assets/img/img-proyectos/N3.webp";
 import img8 from "../../assets/img/img-proyectos/N10.webp";
 import img9 from "../../assets/img/img-proyectos/N9.webp";
 import img11 from "../../assets/img/img-proyectos/N11.webp";
+import img12 from "../../assets/img/img-proyectos/N12.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 // === Proyectos activos ===
 const proyectosActivos = [
   {
-    img: mampaticaImg,
-    alt: "Mampatica",
-    title: "Sitio web + Branding",
-    desc: "Complejo de cabañas y cafetería en Tanti. Nueva versión 2025.",
+    img: paladarImg,
+    alt: "Paladar Saludable",
+    title: "Landing page UX/UI",
+    desc: "Rediseño y flujo UX para nutricionista. Optimización móvil y SEO.",
     badge: "Próximo lanzamiento",
-    tech: [FaHtml5, FaCss3Alt, FaReact],
+    tech: [FaHtml5, FaCss3Alt, FaJs],
+  },
+  {
+    img: puriImg,
+    alt: "Puri",
+    title: "Portfolio Artistico",
+    desc: "Diseño y flujo UX para artista. Optimización móvil y SEO.",
+    badge: "En desarrollo",
+    tech: [FaHtml5, FaCss3Alt, FaJs],
   },
   {
     img: agroTruckImg,
@@ -41,26 +50,17 @@ const proyectosActivos = [
     badge: "En desarrollo",
     tech: [FaReact, FaJs],
   },
-  {
-    img: paladarImg,
-    alt: "Paladar Saludable",
-    title: "Landing page UX/UI",
-    desc: "Rediseño y flujo UX para nutricionista. Optimización móvil y SEO.",
-    badge: "En desarrollo",
-    tech: [FaHtml5, FaCss3Alt, FaJs],
-  },
-  // {
-  //   img: puriImg,
-  //   alt: "Puri",
-  //   title: "Portfolio Artistico",
-  //   desc: "Rediseño y flujo UX para artista. Optimización móvil y SEO.",
-  //   badge: "En desarrollo",
-  //   tech: [FaHtml5, FaCss3Alt, FaJs],
-  // },
 ];
 
 // === Proyectos finalizados ===
 const proyectosData = [
+  {
+    img: img12,
+    alt: "Mampatica",
+    title: "Sitio Web",
+    url: "https://mampatica.com/",
+    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+  },
   {
     img: img11,
     alt: "SKY Las Grutas",
