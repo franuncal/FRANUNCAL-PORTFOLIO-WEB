@@ -154,7 +154,7 @@ export const SobreMi = () => {
             <h2 ref={titleRef}>Hola, soy Fran</h2>
             <h3 ref={subtitleRef}>Frontend Developer</h3>
             <p ref={paragraphRef}>
-              Más de 4 años de experiencia en el desarrollo de sitios web
+              Más de 3 años de experiencia en el desarrollo de sitios web
               atractivos, funcionales y con identidad. Transformo ideas en
               experiencias digitales sólidas, enfocadas en los detalles, la
               estética y una conexión real con cada usuario.

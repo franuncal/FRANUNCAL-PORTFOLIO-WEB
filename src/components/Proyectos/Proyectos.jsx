@@ -1,14 +1,16 @@
 import "./Proyectos.css";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
+// import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
+import { FaReact, FaJs } from "react-icons/fa";
+import { SiVite, SiGreensock, SiReactrouter } from "react-icons/si";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // === Imagenes de proyectos activos ===
 import agroTruckImg from "../../assets/img/img-proyectos/agrotruck.png";
-// import mampaticaImg from "../../assets/img/img-proyectos/mampatica.png";
-import paladarImg from "../../assets/img/img-proyectos/paladar.png";
-import puriImg from "../../assets/img/img-proyectos/puri.webp";
+import agencia from "../../assets/img/img-proyectos/agencia.webp";
+import conect from "../../assets/img/img-proyectos/conect.webp";
+// import puriImg from "../../assets/img/img-proyectos/puri.webp";
 
 // === Imagenes de proyectos finalizados ===
 import img from "../../assets/img/img-proyectos/N1.webp";
@@ -21,26 +23,28 @@ import img8 from "../../assets/img/img-proyectos/N10.webp";
 import img9 from "../../assets/img/img-proyectos/N9.webp";
 import img11 from "../../assets/img/img-proyectos/N11.webp";
 import img12 from "../../assets/img/img-proyectos/N12.webp";
+import img13 from "../../assets/img/img-proyectos/N13.webp";
+import img14 from "../../assets/img/img-proyectos/N14.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 // === Proyectos activos ===
 const proyectosActivos = [
   {
-    img: paladarImg,
-    alt: "Paladar Saludable",
-    title: "Landing page UX/UI",
-    desc: "Rediseño y flujo UX para nutricionista. Optimización móvil y SEO.",
-    badge: "Próximo lanzamiento",
-    tech: [FaHtml5, FaCss3Alt, FaJs],
+    img: agencia,
+    alt: "Agencia de Marketing",
+    title: "Sitio Web Corporativo",
+    desc: "Sitio web para agencia de marketing. Desarrollo completo en React.",
+    badge: "En desarrollo",
+    tech: [FaReact, SiVite, SiGreensock],
   },
   {
-    img: puriImg,
-    alt: "Puri",
-    title: "Portfolio Artistico",
-    desc: "Diseño y flujo UX para artista. Optimización móvil y SEO.",
+    img: conect,
+    alt: "ConectArte",
+    title: "E-commerce de Productos",
+    desc: "E-commerce de productos. Desarrollo en React con enfoque escalable.",
     badge: "En desarrollo",
-    tech: [FaHtml5, FaCss3Alt, FaJs],
+    tech: [FaReact, SiVite, SiGreensock],
   },
   {
     img: agroTruckImg,
@@ -55,74 +59,88 @@ const proyectosActivos = [
 // === Proyectos finalizados ===
 const proyectosData = [
   {
+    img: img14,
+    alt: "Puri Arte/Serigrafia",
+    title: "Portfolio Web",
+    url: "https://puri.com.ar/",
+    tech: [FaReact, SiVite, SiGreensock],
+  },
+  {
+    img: img13,
+    alt: "Paladar Saludable",
+    title: "Landing Page",
+    url: "https://paladarsaludable.com.ar/",
+    tech: [FaReact, SiVite, SiReactrouter],
+  },
+  {
     img: img12,
     alt: "Mampatica",
     title: "Sitio Web",
     url: "https://mampatica.com/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite, SiGreensock],
   },
   {
     img: img11,
     alt: "SKY Las Grutas",
     title: "Sitio Web",
     url: "https://skylasgrutas.com/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite],
   },
   {
     img: img8,
     alt: "Bombicino Diagnóstico",
     title: "Sitio Web",
     url: "https://www.bombicino.com.ar/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite, SiReactrouter],
   },
   {
     img: img2,
     alt: "Portfolio Audiovisual",
     title: "Portfolio Web",
     url: "https://federementeria.com/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite],
   },
   {
     img: img,
     alt: "Grand Alyson",
     title: "Sitio Web",
     url: "https://experienciagrandalyson.com.ar/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite, SiReactrouter],
   },
   {
     img: img5,
     alt: "Silvestre DDL",
     title: "Landing Page",
     url: "https://silvestreddl.com/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite],
   },
   {
     img: img7,
     alt: "Menta y Limón Cumbia",
     title: "Landing Page",
     url: "https://mentaylimoncumbia.com/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite, SiGreensock],
   },
   {
     img: img4,
     alt: "Cabañas Temistocles",
     title: "Sitio Web",
     url: "https://temistoclesesquel.com.ar/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite],
   },
   {
     img: img1,
     alt: "Chand Mantra",
     title: "Landing Page",
     url: "https://chandmantra.com/",
-    tech: [FaHtml5, FaCss3Alt, FaJs],
+    tech: [FaJs, FaReact, SiVite],
   },
   {
     img: img9,
     alt: "MI Logística Internacional",
     title: "Landing Page",
     url: "https://milogisticainternacional.com/",
-    tech: [FaHtml5, FaCss3Alt, FaJs, FaReact],
+    tech: [FaReact, SiVite],
   },
 ];
 
@@ -177,7 +195,7 @@ const Proyectos = () => {
   return (
     <section id="projects" className="projects-section">
       {/* === BLOQUE DE PROYECTOS ACTIVOS === */}
-      <h2 ref={titleRef}>En desarrollo — proyectos activos</h2>
+      <h2 ref={titleRef}>En desarrollo </h2>
       <p className="projects-desc">
         Actualmente trabajando en nuevas experiencias digitales.
       </p>
