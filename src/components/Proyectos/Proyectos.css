@@ -1,6 +1,9 @@
 .projects-section {
   padding: 120px 0 40px 0;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .projects-section h2 {
@@ -13,6 +16,88 @@
 
 .finalizados-title {
   margin-top: 5rem;
+}
+
+/* === MENSAJE DE AGENDA === */
+.development-message {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.development-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.development-content p {
+  font-size: 1.1rem;
+  color: #ededed;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+/* === TILTED CARDS GRID === */
+.tilted-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.tilted-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.tilted-card-link:hover {
+  transform: translateY(-5px);
+}
+
+.tilted-card-project-info {
+  margin-top: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.tilted-card-project-info h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.tilted-card-project-info .tech-logos {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tilted-card-project-info .tech-logos .icon {
+  width: 22px;
+  color: #fff;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.tilted-card-project-info .tech-logos .icon:hover {
+  transform: scale(1.18) rotate(-8deg);
 }
 
 .projects-desc {
@@ -31,6 +116,72 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* === CARDS CON STARBORDER === */
+.project-card-active-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.project-card-active-wrapper .inner-content {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  position: relative;
+}
+
+.project-card-active-wrapper .badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: linear-gradient(90deg, #4ade80, #22c55e);
+  color: #0d0d0d;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  animation: glowBadge 2.8s infinite;
+  z-index: 2;
+}
+
+.project-card-active-wrapper .project-info {
+  margin-top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.project-card-active-wrapper h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.project-card-active-wrapper .tech-logos {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.project-card-active-wrapper .tech-logos .icon {
+  width: 22px;
+  color: #fff;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.project-card-active-wrapper .tech-logos .icon:hover {
+  transform: scale(1.18) rotate(-8deg);
 }
 
 /* === PROYECTOS ACTIVOS === */
@@ -44,6 +195,33 @@
 .project-card.active:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards sin imágenes */
+.project-card.active.no-image {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.project-card.active.no-image .project-info {
+  margin-top: 0;
+  width: 100%;
+}
+
+.project-card.active.no-image h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.project-card.active.no-image .tech-logos {
+  margin-top: 0;
 }
 
 /* Overlay animado */
@@ -144,6 +322,7 @@
   filter: brightness(0.96);
 }
 
+
 /* === ICONOS Y TEXTO === */
 .project-info {
   display: flex;
@@ -180,13 +359,44 @@
 
 /* === RESPONSIVE === */
 @media (max-width: 900px) {
+  .projects-section {
+    padding: 100px 0 30px 0;
+  }
+
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .projects-container.active {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   .project-card img {
     height: 220px;
+  }
+
+  .tilted-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .project-card-active-wrapper .inner-content {
+    padding: 1.5rem 1.2rem;
+    min-height: 160px;
+  }
+
+  .project-card-active-wrapper h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .development-message {
+    margin-bottom: 2.5rem;
+    padding: 2.5rem 1.5rem;
   }
 }
 
@@ -195,9 +405,20 @@
     padding: 80px 0 24px 0;
   }
 
+  .projects-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
   .projects-container {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .projects-container.active {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
 
   .project-card {
@@ -208,5 +429,46 @@
   .badge {
     font-size: 0.65rem;
     padding: 4px 8px;
+  }
+
+  .tilted-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .development-message {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 15px;
+  }
+
+  .development-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .development-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .project-card-active-wrapper .inner-content {
+    padding: 1.5rem 1rem;
+    min-height: 150px;
+  }
+
+  .project-card-active-wrapper h3 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .project-card-active-wrapper .tech-logos .icon {
+    width: 20px;
+  }
+
+  .projects-desc {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 }

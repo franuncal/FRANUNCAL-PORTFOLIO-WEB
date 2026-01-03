@@ -5,59 +5,61 @@ import { SiVite, SiGreensock, SiReactrouter } from "react-icons/si";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// === Imagenes de proyectos activos ===
-import agroTruckImg from "../../assets/img/img-proyectos/agrotruck.png";
-import agencia from "../../assets/img/img-proyectos/agencia.webp";
-import conect from "../../assets/img/img-proyectos/conect.webp";
-// import puriImg from "../../assets/img/img-proyectos/puri.webp";
+import TiltedCard from "./TiltedCard";
+import StarBorder from "./StarBorder";
 
 // === Imagenes de proyectos finalizados ===
 import img from "../../assets/img/img-proyectos/N1.webp";
 import img1 from "../../assets/img/img-proyectos/N8.webp";
 import img2 from "../../assets/img/img-proyectos/N2.webp";
+// import img3 from "../../assets/img/img-proyectos/N4.webp";
 import img4 from "../../assets/img/img-proyectos/N6.webp";
 import img5 from "../../assets/img/img-proyectos/N5.webp";
+// import img6 from "../../assets/img/img-proyectos/N7.webp";
 import img7 from "../../assets/img/img-proyectos/N3.webp";
 import img8 from "../../assets/img/img-proyectos/N10.webp";
-import img9 from "../../assets/img/img-proyectos/N9.webp";
+// import img9 from "../../assets/img/img-proyectos/N9.webp";
 import img11 from "../../assets/img/img-proyectos/N11.webp";
 import img12 from "../../assets/img/img-proyectos/N12.webp";
 import img13 from "../../assets/img/img-proyectos/N13.webp";
 import img14 from "../../assets/img/img-proyectos/N14.webp";
+import img15 from "../../assets/img/img-proyectos/N15.webp";
+import img16 from "../../assets/img/img-proyectos/N16.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 // === Proyectos activos ===
 const proyectosActivos = [
   {
-    img: agencia,
-    alt: "Agencia de Marketing",
     title: "Sitio Web Corporativo",
-    desc: "Sitio web para agencia de marketing. Desarrollo completo en React.",
-    badge: "En desarrollo",
     tech: [FaReact, SiVite, SiGreensock],
   },
   {
-    img: conect,
-    alt: "ConectArte",
     title: "E-commerce de Productos",
-    desc: "E-commerce de productos. Desarrollo en React con enfoque escalable.",
-    badge: "En desarrollo",
     tech: [FaReact, SiVite, SiGreensock],
   },
   {
-    img: agroTruckImg,
-    alt: "Agro Truck App",
     title: "Landing + App móvil",
-    desc: "Plataforma de logística agropecuaria. Desarrollo web y app React Native.",
-    badge: "En desarrollo",
     tech: [FaReact, FaJs],
   },
 ];
 
 // === Proyectos finalizados ===
 const proyectosData = [
+  {
+    img: img15,
+    alt: "Cardiología Hepta",
+    title: "Landing Page",
+    url: "https://cardiologia.hepta.com.ar/",
+    tech: [FaReact, SiVite],
+  },
+  {
+    img: img16,
+    alt: "Killacabanas",
+    title: "Sitio Web",
+    url: "https://killacabanas.com/",
+    tech: [FaReact, SiVite, SiGreensock],
+  },
   {
     img: img14,
     alt: "Puri Arte/Serigrafia",
@@ -135,19 +137,33 @@ const proyectosData = [
     url: "https://chandmantra.com/",
     tech: [FaJs, FaReact, SiVite],
   },
-  {
-    img: img9,
-    alt: "MI Logística Internacional",
-    title: "Landing Page",
-    url: "https://milogisticainternacional.com/",
-    tech: [FaReact, SiVite],
-  },
+  // {
+  //   img: img9,
+  //   alt: "MI Logística Internacional",
+  //   title: "Landing Page",
+  //   url: "https://milogisticainternacional.com/",
+  //   tech: [FaReact, SiVite],
+  // },
+  // {
+  //   img: img3,
+  //   alt: "Proyecto Nuevo 1",
+  //   title: "Sitio Web",
+  //   url: "#",
+  //   tech: [FaReact, SiVite, SiGreensock],
+  // },
+  // {
+  //   img: img6,
+  //   alt: "Proyecto Nuevo 2",
+  //   title: "Landing Page",
+  //   url: "#",
+  //   tech: [FaReact, SiVite],
+  // },
 ];
 
 const Proyectos = () => {
   const titleRef = useRef(null);
+  const developmentRef = useRef(null);
   const cardsActivosRef = useRef([]);
-  const cardsFinalizadosRef = useRef([]);
 
   useEffect(() => {
     // Animación título principal
@@ -157,36 +173,37 @@ const Proyectos = () => {
       { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
     );
 
+    // Animación del mensaje de desarrollo
+    if (developmentRef.current) {
+      gsap.fromTo(
+        developmentRef.current,
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: developmentRef.current,
+            start: "top 85%",
+          },
+        }
+      );
+    }
+
     // Animación de proyectos activos
     gsap.fromTo(
       cardsActivosRef.current.filter(Boolean),
-      { scale: 0.9, opacity: 0 },
+      { y: 30, opacity: 0 },
       {
-        scale: 1,
+        y: 0,
         opacity: 1,
         duration: 0.8,
         stagger: 0.15,
-        ease: "back.out(1.6)",
+        ease: "power2.out",
         scrollTrigger: {
           trigger: cardsActivosRef.current[0],
-          start: "top 92%",
-        },
-      }
-    );
-
-    // Animación de proyectos finalizados
-    gsap.fromTo(
-      cardsFinalizadosRef.current.filter(Boolean),
-      { scale: 0.9, opacity: 0 },
-      {
-        scale: 1,
-        opacity: 1,
-        duration: 0.8,
-        stagger: 0.12,
-        ease: "back.out(1.6)",
-        scrollTrigger: {
-          trigger: cardsFinalizadosRef.current[0],
-          start: "top 92%",
+          start: "top 85%",
         },
       }
     );
@@ -194,35 +211,39 @@ const Proyectos = () => {
 
   return (
     <section id="projects" className="projects-section">
+      {/* === MENSAJE DE AGENDA === */}
+      <div className="development-message" ref={developmentRef}>
+        <div className="development-content">
+          <h3>Agenda 2026 abierta para nuevos proyectos.</h3>
+          <p>
+            Disponible para colaborar en proyectos innovadores que busquen
+            transformar ideas en realidad digital.
+          </p>
+        </div>
+      </div>
+
       {/* === BLOQUE DE PROYECTOS ACTIVOS === */}
-      <h2 ref={titleRef}>En desarrollo </h2>
-      <p className="projects-desc">
-        Actualmente trabajando en nuevas experiencias digitales.
-      </p>
+      <h2 ref={titleRef}>En desarrollo</h2>
       <div className="projects-container active">
         {proyectosActivos.map((p, i) => (
-          <div
-            className="project-card active"
+          <StarBorder
             key={i}
+            as="div"
+            className="project-card-active-wrapper"
+            color="cyan"
+            speed="5s"
             ref={(el) => (cardsActivosRef.current[i] = el)}
           >
-            <div className="badge">{p.badge}</div>
-            <div className="img-wrapper">
-              <img src={p.img} alt={p.alt} />
-              <div className="overlay">
-                <span>En desarrollo</span>
-              </div>
-            </div>
+            <div className="badge">En desarrollo</div>
             <div className="project-info">
               <h3>{p.title}</h3>
-              <p className="desc">{p.desc}</p>
               <div className="tech-logos">
                 {p.tech.map((Icon, idx) => (
                   <Icon className="icon" key={idx} />
                 ))}
               </div>
             </div>
-          </div>
+          </StarBorder>
         ))}
       </div>
 
@@ -232,25 +253,38 @@ const Proyectos = () => {
         Algunos de los proyectos que he creado a lo largo de mi carrera como
         programador.
       </p>
-      <div className="projects-container">
-        {proyectosData.map((p, i) => (
-          <div
-            className="project-card"
+      <div className="tilted-cards-grid">
+        {proyectosData.map((proyecto, i) => (
+          <a
             key={i}
-            ref={(el) => (cardsFinalizadosRef.current[i] = el)}
+            href={proyecto.url}
+            target="_blank"
+            rel="noreferrer"
+            className="tilted-card-link"
           >
-            <a href={p.url} target="_blank" rel="noreferrer">
-              <img src={p.img} alt={p.alt} />
-            </a>
-            <div className="project-info">
-              <h3>{p.title}</h3>
+            <TiltedCard
+              imageSrc={proyecto.img}
+              altText={proyecto.alt}
+              captionText={proyecto.title}
+              containerHeight="320px"
+              containerWidth="100%"
+              imageHeight="320px"
+              imageWidth="100%"
+              rotateAmplitude={12}
+              scaleOnHover={1.2}
+              showMobileWarning={false}
+              showTooltip={true}
+              displayOverlayContent={false}
+            />
+            <div className="tilted-card-project-info">
+              <h3>{proyecto.title}</h3>
               <div className="tech-logos">
-                {p.tech.map((Icon, idx) => (
+                {proyecto.tech.map((Icon, idx) => (
                   <Icon className="icon" key={idx} />
                 ))}
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
