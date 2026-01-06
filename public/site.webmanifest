@@ -1,0 +1,24 @@
+{
+  "name": "Fran Uncal - Frontend Developer",
+  "short_name": "Fran Uncal",
+  "description": "Portfolio de Fran Uncal, Frontend Developer freelance especializado en React",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait-primary"
+}
+
