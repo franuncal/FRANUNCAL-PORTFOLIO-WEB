@@ -1,260 +1,406 @@
-.sobre-mi {
-  padding: 160px 0 40px 0;
-  color: #f6f6f6;
-  text-align: start;
+.sobre-mi-section {
+  min-height: 100vh;
+  width: 100%;
   position: relative;
-  overflow: hidden;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 100px 60px 60px 60px;
+  font-family: "Cormorant Garamond", serif;
 }
 
-.sobre-mi-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-logo {
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  border: 3px solid var(--second-bg-color);
-  object-fit: cover;
-  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.1);
-  background: #f6f6f6;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.profile-logo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.15);
-}
-
-.text {
-  flex: 1;
-  min-width: 260px;
-  max-width: 560px;
-}
-
-.text h2 {
-  color: #f6f6f6;
-  font-size: 4.5rem;
-  margin-bottom: 8px;
-  font-weight: 200;
-}
-
-.sobre-mi h3::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 2px;
-  background-color: #f6f6f6;
-  margin: 6px auto 0 auto; /* centrado horizontal */
-  animation: growLine 1s ease-out forwards;
-  transform-origin: center; /* cambia a 'center' para que la animación crezca desde el centro */
-}
-
-.text h3 {
-  color: #f6f6f6;
-  font-size: 2.8rem;
-  font-weight: 300;
-  margin-bottom: 18px;
-}
-
-.text p {
-  color: #ddd;
-  font-size: 1.15rem;
-  line-height: 1.7;
-  margin-bottom: 10px;
-  font-weight: 100;
-}
-
-.button-group {
-  margin-top: 24px;
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  font-family: "Akatab", sans-serif;
-  display: inline-block;
-  background: linear-gradient(90deg, #fff 0%, #ededed 100%);
-  color: #232526;
-  font-size: 1.08rem;
+/* Botón HOME arriba - fijo */
+.home-link {
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
   font-weight: 500;
-  padding: 0.85rem 2.2rem;
-  border-radius: 32px;
+  color: #000000;
   text-decoration: none;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s, color 0.3s, transform 0.3s;
-  letter-spacing: 0.5px;
+  transform: rotate(-90deg);
+  transform-origin: left center;
+  white-space: nowrap;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+  letter-spacing: 1px;
 }
 
-.btn:hover {
-  background: linear-gradient(90deg, #6bceb2 0%, #43aaff 100%);
-  color: #fff;
-  transform: scale(1.05);
+/* Línea después de HOME en desktop */
+@media (min-width: 901px) {
+  .home-link::after {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    width: 30px;
+    height: 1px;
+    background-color: #000000;
+  }
+
+  /* Línea vertical debajo de HOME */
+  .home-link::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 100%;
+    width: 1px;
+    height: calc(100vh - 200px);
+    background-color: #000000;
+    margin-top: 15px;
+  }
 }
 
-/* === TECNOLOGÍAS (versión original) === */
-.tecnologias {
+.home-link:hover {
+  opacity: 0.7;
+}
+
+/* Copyright vertical abajo izquierda - fijo */
+.copyright {
+  position: fixed;
+  left: 20px;
+  bottom: 40px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+  transform: rotate(-90deg);
+  transform-origin: left center;
+  white-space: nowrap;
+  z-index: 10;
+  letter-spacing: 1px;
+}
+
+/* Contenedor principal */
+.sobre-mi-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.sobre-mi-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Texto a la izquierda */
+.sobre-mi-text {
+  max-width: 100%;
+}
+
+.sobre-mi-title {
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 30px 0;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.sobre-mi-intro {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  color: #000000;
+  margin: 0 0 40px 0;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.sobre-mi-description {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.8;
+}
+
+.sobre-mi-description p {
+  margin: 0 0 24px 0;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.sobre-mi-description ul {
+  margin: 16px 0 24px 0;
+  padding-left: 24px;
+}
+
+.sobre-mi-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Cita */
+.quote-text {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.quote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #000000;
+  margin: 0 0 32px 0;
+  padding-left: 24px;
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 12px;
+  font-size: 1rem;
+  font-style: normal;
+  opacity: 0.8;
+}
+
+/* Separador de secciones */
+.section-divider {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  color: #000000;
   text-align: center;
-  margin-top: 64px;
+  margin: 48px 0 32px 0;
+  opacity: 0.6;
 }
 
-.tecnologias h2 {
-  font-size: 2.2rem;
-  color: #f6f6f6;
-  margin-bottom: 18px;
-  font-weight: 200;
-  padding-top: 2rem;
+/* Títulos de sección */
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 16px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.iconos-tecnologias {
+.section-subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  color: #000000;
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+}
+
+.section-subtitle strong {
+  font-weight: 600;
+}
+
+/* Lista de experiencia */
+.sobre-mi-description .experience-list {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.8;
+  margin: 16px 0 24px 0;
+  padding-left: 24px;
+  list-style-type: disc;
+  list-style-position: outside;
+  display: block;
+}
+
+.sobre-mi-description .experience-list li {
+  margin-bottom: 8px;
+  color: #000000;
+  display: list-item;
+  list-style-type: disc;
+}
+
+/* Skills */
+.skills-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.8;
+  margin: 16px 0 24px 0;
+}
+
+/* Imagen a la derecha */
+.sobre-mi-image {
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  height: fit-content;
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 28px;
-  padding-bottom: 5rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
 }
 
-.icon {
-  font-size: 2.3rem;
-  color: #f6f6f6;
-  transition: color 0.3s, transform 0.3s;
+.image-placeholder span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.icon-html:hover {
-  color: #e44d26;
-}
-.icon-css:hover {
-  color: #1572b6;
-}
-.icon-js:hover {
-  color: #f7df1e;
-}
-.icon-react:hover {
-  color: #61dafb;
-}
-.icon-git:hover {
-  color: #f1502f;
-}
-.icon-github:hover {
-  color: #fff;
-}
-.icon-aws:hover {
-  color: #ff9900;
-}
-.icon-npm:hover {
-  color: #cb3837;
+/* Cuando se agregue la imagen real */
+.sobre-mi-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
-.icon:hover {
-  transform: scale(1.18);
-}
-
-/* === RESPONSIVE === */
-
-@media (max-width: 1024px) {
-  .profile-logo {
-    width: 200px;
-    height: 200px;
+/* Responsive */
+@media (max-width: 1200px) {
+  .sobre-mi-title {
+    font-size: 5rem;
   }
 
-  .text h2 {
-    font-size: 3rem;
-  }
-
-  .text p {
-    font-size: 1.05rem;
-  }
-
-  .tecnologias h2 {
-    font-size: 1.8rem;
-  }
-
-  .icon {
-    font-size: 1.9rem;
+  .sobre-mi-content {
+    gap: 60px;
   }
 }
 
-@media (max-width: 768px) {
-  .sobre-mi-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    gap: 36px;
+@media (max-width: 900px) {
+  .sobre-mi-section {
+    padding: 60px 30px 30px 30px;
   }
 
-  .text h2 {
-    font-size: 3rem;
-    text-align: center;
-    /* font-weight: 100; */
+  .home-link {
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    letter-spacing: 0;
+    display: inline-block;
   }
 
-  .text h3,
-  .text p {
-    text-align: center;
+  .home-link::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #000000;
+    margin-left: 15px;
+    vertical-align: middle;
   }
 
-  .button-group {
-    justify-content: center;
+  .copyright {
+    display: none;
   }
 
-  .tecnologias {
-    margin-top: 50px;
+  .sobre-mi-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
 
-  .icon {
+  .sobre-mi-image {
+    position: static;
+    top: auto;
+    order: -1;
+  }
+
+  .sobre-mi-title {
+    font-size: 4rem;
+  }
+
+  .sobre-mi-intro {
+    font-size: 1.2rem;
+  }
+
+  .sobre-mi-description {
+    font-size: 1rem;
+  }
+
+  .sobre-mi-description p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+    padding-left: 20px;
+  }
+
+  .section-title {
     font-size: 1.6rem;
   }
+
+  .section-divider {
+    margin: 40px 0 28px 0;
+  }
+
+  .sobre-mi-description .experience-list {
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+
+  .skills-text {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 480px) {
-  .sobre-mi {
-    padding: 28px 0 10px 0;
-    margin-top: 50px;
+@media (max-width: 600px) {
+  .sobre-mi-section {
+    padding: 50px 20px 20px 20px;
   }
 
-  .profile-logo {
-    width: 180px;
-    height: 180px;
+  .home-link {
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
 
-  .text h2 {
+  .home-link::after {
+    width: 30px;
+    margin-left: 12px;
+  }
+
+  .sobre-mi-title {
     font-size: 3rem;
-    font-weight: 100;
   }
 
-  .text h3 {
-    font-size: 2rem;
+  .sobre-mi-intro {
+    font-size: 1.1rem;
   }
 
-  .text p {
+  .sobre-mi-description {
     font-size: 0.95rem;
   }
 
-  .btn {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+  .sobre-mi-description p {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
   }
 
-  .icon {
-    font-size: 1.3rem;
+  .quote {
+    font-size: 1rem;
+    padding-left: 16px;
   }
 
-  .tecnologias h2 {
+  .section-title {
     font-size: 1.4rem;
+  }
+
+  .section-divider {
+    margin: 32px 0 24px 0;
+  }
+
+  .sobre-mi-description .experience-list {
+    font-size: 0.95rem;
+    padding-left: 18px;
+  }
+
+  .skills-text {
+    font-size: 0.95rem;
+  }
+
+  .sobre-mi-content {
+    gap: 40px;
   }
 }

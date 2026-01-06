@@ -47,11 +47,6 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/proceso" onClick={closeMenu}>
-                Proceso
-              </a>
-            </li>
-            <li>
               <Link to="/contacto" onClick={closeMenu}>
                 Contacto
               </Link>
