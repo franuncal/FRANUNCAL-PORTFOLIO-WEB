@@ -7,7 +7,7 @@
 }
 
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #ebe3c3;
   --text-color: #000000;
   --text-light: #2a2a2a;
   --border-color: #e5e5e5;
@@ -28,7 +28,7 @@ html {
 body {
   overflow-x: hidden;
   line-height: 1.6;
-  background-color: #ffffff;
+  background-color: #ebe3c3;
   color: #000000;
   font-family: "Cormorant Garamond", serif;
 }
@@ -62,4 +62,16 @@ li {
 /* Eliminar efecto de mouse move en el background */
 body {
   background-position: 0 0 !important;
+}
+
+/* Estilos para las transiciones de página */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Asegurar que las páginas ocupen todo el espacio */
+body>#root>div {
+  width: 100%;
+  min-height: 100vh;
 }

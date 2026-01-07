@@ -11,11 +11,11 @@ const proyectosData = [
     type: "REACT - Portfolio",
   },
   {
-    name: "PALADAR SALUDABLE",
+    name: "KILLA",
     description:
       "Landing page para servicio de alimentación saludable. Enfoque en conversión y experiencia de usuario.",
-    url: "https://paladarsaludable.com.ar/",
-    type: "REACT - Landing Page",
+    url: "https://killacabanas.com/",
+    type: "REACT - sitio web",
   },
   {
     name: "MAMPATICA",
@@ -25,11 +25,25 @@ const proyectosData = [
     type: "REACT sitio web",
   },
   {
-    name: "SKY LAS GRUTAS",
+    name: "FEDE R.",
+    description:
+      "Portfolio audiovisual. Showcase de trabajos creativos con diseño impactante.",
+    url: "https://federementeria.com/",
+    type: "React - Portfolio",
+  },
+  {
+    name: "SKY",
     description:
       "Sitio web para complejo turístico. Experiencia visual inmersiva.",
     url: "https://skylasgrutas.com/",
     type: "REACT sitio web",
+  },
+  {
+    name: "MENTA&LIMON",
+    description:
+      "Landing page para banda de cumbia. Enfoque en conversión y experiencia de usuario.",
+    url: "https://www.mentaylimoncumbia.com/",
+    type: "React - Landing Page",
   },
   {
     name: "BOMBICINO",
@@ -38,12 +52,13 @@ const proyectosData = [
     url: "https://www.bombicino.com.ar/",
     type: "React - Sitio web",
   },
+
   {
-    name: "FEDE R.",
+    name: "PALADAR SALUDABLE",
     description:
-      "Portfolio audiovisual. Showcase de trabajos creativos con diseño impactante.",
-    url: "https://federementeria.com/",
-    type: "React - Portfolio",
+      "Landing page para servicio de alimentación saludable. Enfoque en conversión y experiencia de usuario.",
+    url: "https://paladarsaludable.com.ar/",
+    type: "REACT - Landing Page",
   },
 ];
 

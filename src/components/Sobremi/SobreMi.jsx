@@ -1,6 +1,5 @@
 import "./SobreMi.css";
 import { Link } from "react-router-dom";
-import logoN2 from "../../assets/img/logoN2.webp";
 
 export const SobreMi = () => {
   return (
@@ -25,39 +24,28 @@ export const SobreMi = () => {
             <div className="sobre-mi-description">
               <p>
                 Siempre me atrajo el punto donde el diseño y la tecnología se
-                cruzan. Desde que entendí que el código podía convertir ideas en
-                experiencias reales, no dejé de probar, romper y volver a armar.
+                cruzan. Desde que entendí que el código puede transformar ideas
+                en experiencias reales, no dejé de probar, romper y volver a
+                armar.
               </p>
 
               <p>
                 Hoy desarrollo sitios web, landing pages y aplicaciones frontend
-                modernas. Pasé por proyectos simples y otros más complejos, y
-                todos moldearon mi forma de trabajar: con criterio, intención y
-                foco en el usuario.
+                modernas. Más allá del tamaño del proyecto, trabajo con el mismo
+                enfoque: construir experiencias con propósito, resolver
+                problemas reales y diseñar soluciones claras, eficientes y
+                centradas en el usuario.
               </p>
 
-              <p>
-                Lo que más me motiva del frontend no es solo escribir código,
-                sino construir experiencias con propósito. No se trata de hacer
-                cosas lindas porque sí, sino de resolver problemas reales con
-                soluciones claras, eficientes y escalables. hecho.
-              </p>
-
-              <p className="quote-text">
+              {/* <p className="quote-text">
                 Esta idea resume mucho de cómo encaro mi trabajo:
-              </p>
+              </p> */}
 
-              <blockquote className="quote">
+              {/* <blockquote className="quote">
                 &quot;La simplicidad es una de las cosas más difíciles de
                 lograr.&quot;
                 <cite>— Jorge Luis Borges</cite>
-              </blockquote>
-
-              <p>
-                No me interesa crear por crear. Solo diseño y desarrollo
-                productos que tengan sentido, aporten valor y dejen una huella
-                clara.
-              </p>
+              </blockquote> */}
 
               <div className="section-divider">⸻</div>
 
@@ -94,22 +82,18 @@ export const SobreMi = () => {
 
               <div className="section-divider">⸻</div>
 
-              <h2 className="section-title">AGRADECIMIENTOS</h2>
+              {/* <h2 className="section-title">AGRADECIMIENTOS</h2> */}
 
               <p>
                 Gran parte de este portfolio es trabajo en equipo. Hoy es muy
-                difícil construir algo realmente bueno en soledad. Acá solo
-                muestro proyectos donde tuve una participación fuerte, pero
-                muchas personas —clientes, colegas, diseñadores y otros
+                difícil construir algo realmente bueno en soledad. Acá muestro
+                proyectos donde tuve una participación fuerte, pero muchas
+                personas —clientes, colegas, diseñadores y otros
                 desarrolladores— influyeron enormemente en mi crecimiento, ya
                 sea con ideas, feedback, criterio o confianza. A todos ellos,
                 gracias.
               </p>
             </div>
-          </div>
-
-          <div className="sobre-mi-image">
-            <img src={logoN2} alt="Fran Uncal" />
           </div>
         </div>
       </div>

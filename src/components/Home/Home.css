@@ -2,8 +2,8 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #ffffff;
-  padding: 100px 60px 60px 60px;
+  background-color: #ebe3c3;
+  padding: 100px 100px 100px 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
@@ -45,11 +45,11 @@
   position: absolute;
   top: 40px;
   right: 60px;
-  width: 320px;
-  background: #fafafa;
+  width: 240px;
+  background: #ebe3c3;
   border: 1px solid #000000;
   border-radius: 8px;
-  padding: 24px;
+  padding: 16px;
   z-index: 10;
 }
 
@@ -61,22 +61,22 @@
 
 .promo-text h3 {
   font-family: "Playfair Display", serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #000000;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .promo-text p {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #2a2a2a;
   margin-bottom: 4px;
 }
 
 .promo-price {
   font-family: "Cormorant Garamond", serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #000000;
   font-weight: 500;
 }
@@ -92,6 +92,7 @@
   gap: 4px;
   padding-left: 0;
   margin-left: -5%;
+  margin-bottom: -40px;
 }
 
 .nav-link {
@@ -100,14 +101,16 @@
   font-weight: 400;
   color: #000000;
   text-decoration: none;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   line-height: 1;
   letter-spacing: -3px;
   text-align: left;
+  display: inline-block;
 }
 
 .nav-link:hover {
-  opacity: 0.6;
+  transform: scale(1.05);
+  /* font-style: italic; */
 }
 
 /* Información personal abajo a la izquierda */
@@ -120,6 +123,7 @@
   max-width: 450px;
   align-self: center;
   padding-right: 40px;
+  margin-top: -20px;
 }
 
 .info-text h2 {
@@ -137,16 +141,18 @@
 }
 
 .professional-description {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", serif !important;
   font-size: 1rem;
   color: #2a2a2a;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .professional-description p {
   margin-bottom: 12px;
   font-size: 1rem;
   color: #2a2a2a;
+  font-family: "Cormorant Garamond", serif !important;
 }
 
 .professional-description p:last-child {
@@ -177,6 +183,8 @@
   .promo-card {
     top: 30px;
     right: 40px;
+    width: 220px;
+    padding: 14px;
   }
 
   .main-navigation {
@@ -202,7 +210,7 @@
   .home-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto;
-    padding: 60px 30px 30px 30px;
+    padding: 60px 50px 30px 30px;
     gap: 40px;
   }
 
@@ -254,10 +262,11 @@
     top: auto;
     right: auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 280px;
     grid-column: 1;
     grid-row: 4;
     order: 4;
+    margin-top: 20px;
   }
 
   .copyright {
@@ -294,9 +303,23 @@
     position: static;
     top: auto;
     right: auto;
-    padding: 20px;
+    padding: 14px;
     width: 100%;
-    max-width: 100%;
+    max-width: 260px;
+    margin-top: 20px;
+  }
+
+  .promo-text h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .promo-text p {
+    font-size: 0.8rem;
+  }
+
+  .promo-price {
+    font-size: 0.75rem;
   }
 
   .nav-link {
@@ -322,4 +345,3 @@
     font-size: 0.8rem;
   }
 }
-

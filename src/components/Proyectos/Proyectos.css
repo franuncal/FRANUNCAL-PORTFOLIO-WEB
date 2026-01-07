@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #ffffff;
+  background-color: #ebe3c3;
   color: #000000;
   padding: 100px 60px 60px 60px;
   display: grid;
@@ -96,11 +96,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-left: 0;
   padding-bottom: 0;
   padding-right: 20px;
   margin-left: -5%;
+  margin-top: -20px;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
@@ -114,7 +115,7 @@
   gap: 4px;
   width: 100%;
   max-width: 100%;
-  align-items: flex-end;
+  align-items: flex-start;
   overflow: hidden;
 }
 
@@ -122,7 +123,7 @@
   width: 100%;
   max-width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -130,15 +131,16 @@
   text-decoration: none;
   color: #000000;
   display: inline-block;
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   text-align: right;
   max-width: 100%;
   overflow: hidden;
 }
 
 .project-link:hover {
-  opacity: 0.7;
+  transform: scale(1.05);
 }
+
 
 .project-name {
   font-family: "Playfair Display", serif;
@@ -164,7 +166,7 @@
   letter-spacing: 1px;
   margin: 8px 0 0 0;
   text-transform: uppercase;
-  text-align: right;
+  text-align: start;
   line-height: 1.4em;
 }
 
@@ -178,6 +180,7 @@
   max-width: 500px;
   align-self: center;
   padding-right: 40px;
+  margin-bottom: -40px;
 }
 
 .work-title {
@@ -190,16 +193,18 @@
 }
 
 .work-description {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.1rem;
+  font-family: "Cormorant Garamond", serif !important;
+  font-size: 1rem;
   color: #000000;
-  line-height: 1.8;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .work-description p {
   margin: 0 0 20px 0;
   color: #000000;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif !important;
 }
 
 .work-description p:last-child {

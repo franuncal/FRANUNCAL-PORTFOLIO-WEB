@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #ffffff;
+  background-color: #ebe3c3;
   color: #000000;
   padding: 100px 60px 60px 60px;
   font-family: "Cormorant Garamond", serif;
@@ -80,15 +80,13 @@
 }
 
 .sobre-mi-content {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 80px;
-  align-items: start;
+  display: block;
 }
 
-/* Texto a la izquierda */
+/* Texto */
 .sobre-mi-text {
-  max-width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .sobre-mi-title {
@@ -220,39 +218,6 @@
   margin: 16px 0 24px 0;
 }
 
-/* Imagen a la derecha */
-.sobre-mi-image {
-  position: sticky;
-  top: 100px;
-  width: 100%;
-  height: fit-content;
-}
-
-.image-placeholder {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  background-color: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(0, 0, 0, 0.4);
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1rem;
-}
-
-.image-placeholder span {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/* Cuando se agregue la imagen real */
-.sobre-mi-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
 
 /* Responsive */
 @media (max-width: 1200px) {
@@ -260,9 +225,6 @@
     font-size: 5rem;
   }
 
-  .sobre-mi-content {
-    gap: 60px;
-  }
 }
 
 @media (max-width: 900px) {
@@ -296,14 +258,7 @@
   }
 
   .sobre-mi-content {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .sobre-mi-image {
-    position: static;
-    top: auto;
-    order: -1;
+    display: block;
   }
 
   .sobre-mi-title {
