@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #ebe3c3;
+  background-color: var(--bg-color);
   color: #000000;
   padding: 100px 60px 60px 60px;
   font-family: "Cormorant Garamond", serif;
