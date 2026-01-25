@@ -11,18 +11,30 @@ const proyectosData = [
     type: "REACT - Portfolio",
   },
   {
+    name: "TEMISTOCLES",
+    description: "Sitio web con sistema de reservas para Cabanas de Esquel.",
+    url: "https://temistoclesesquel.com.ar/",
+    type: "REACT - Sitio web",
+  },
+  {
     name: "KILLA",
     description:
-      "Landing page para servicio de alimentación saludable. Enfoque en conversión y experiencia de usuario.",
+      "Sitio web con sistema de reservas para Cabanas de Tanti Cordoba..",
     url: "https://killacabanas.com/",
-    type: "REACT - sitio web",
+    type: "REACT - Sitio web",
+  },
+  {
+    name: "SILVESTRE",
+    description:
+      "Landing page para una marca de Dulce de leche artesanal, con diseno moderno, responsive y funcional.",
+    url: "https://silvestreddl.com/",
+    type: "REACT - Landing Page",
   },
   {
     name: "MAMPATICA",
-    description:
-      "Sitio web corporativo para empresa de tecnología. Diseño moderno y funcional.",
+    description: "Sitio web con sistema de reservas para Cabanas de Mampatica.",
     url: "https://mampatica.com.ar/",
-    type: "REACT sitio web",
+    type: "REACT - Sitio web",
   },
   {
     name: "FEDE R.",
