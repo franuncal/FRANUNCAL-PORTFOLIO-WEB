@@ -18,7 +18,7 @@ export const SobreMi = () => {
             <h1 className="sobre-mi-title">Soy Fran.</h1>
 
             <p className="sobre-mi-intro">
-              Programador frontend y creador digital.
+              Desarrollo web frontend — React, animaciones y performance.
             </p>
 
             <div className="sobre-mi-description">
@@ -31,39 +31,36 @@ export const SobreMi = () => {
 
               <p>
                 Hoy desarrollo sitios web, landing pages y aplicaciones frontend
-                modernas. Más allá del tamaño del proyecto, trabajo con el mismo
-                enfoque: construir experiencias con propósito, resolver
-                problemas reales y diseñar soluciones claras, eficientes y
-                centradas en el usuario.
+                desde cero. Me especializo en React, animaciones con GSAP y
+                optimización de performance. Trabajo directamente con clientes y
+                diseñadores — del mockup al deploy — con el mismo nivel de
+                atención sin importar el tamaño del proyecto.
               </p>
-
-              {/* <p className="quote-text">
-                Esta idea resume mucho de cómo encaro mi trabajo:
-              </p> */}
-
-              {/* <blockquote className="quote">
-                &quot;La simplicidad es una de las cosas más difíciles de
-                lograr.&quot;
-                <cite>— Jorge Luis Borges</cite>
-              </blockquote> */}
 
               <div className="section-divider">⸻</div>
 
               <h2 className="section-title">EXPERIENCIA</h2>
 
               <p className="section-subtitle">
-                <strong>Técnico en Programación</strong>
+                <strong>Frontend Web Developer — Freelance</strong>
               </p>
               <p className="section-subtitle">
-                +4 años de experiencia en desarrollo web y frontend
+                Marzo 2023 – Presente · +2 años
               </p>
 
-              <p>Durante este recorrido trabajé en:</p>
+              <p>Durante este tiempo trabajé en:</p>
               <ul className="experience-list">
-                <li>Desarrollo de sitios web y landing pages</li>
-                <li>Aplicaciones web frontend con React</li>
-                <li>Proyectos orientados a UX, performance y escalabilidad</li>
-                <li>Colaboración directa con clientes, marcas y equipos</li>
+                <li>Desarrollo de sitios web y landing pages a medida</li>
+                <li>Aplicaciones web frontend con React y Vite</li>
+                <li>Animaciones e interacciones con GSAP</li>
+                <li>Integraciones con APIs REST y Supabase como backend</li>
+                <li>
+                  Proyectos orientados a performance, Core Web Vitals y
+                  escalabilidad
+                </li>
+                <li>
+                  Colaboración directa con clientes, marcas y equipos de diseño
+                </li>
               </ul>
 
               <div className="section-divider">⸻</div>
@@ -71,18 +68,20 @@ export const SobreMi = () => {
               <h2 className="section-title">SKILLS</h2>
 
               <p className="skills-text">
-                Frontend Development / React / JavaScript / HTML & CSS
+                Frontend Development / React / JavaScript (ES6+) / HTML & CSS
                 <br />
-                UI & UX Thinking / Responsive Design / Web Performance
+                CSS Modules / GSAP / Animaciones y micro-interacciones
                 <br />
-                Arquitectura Frontend / Componentización / Design Systems
+                Vite / npm / Git / GitHub
                 <br />
-                Animaciones y micro-interacciones / Git / Trabajo colaborativo
+                Supabase / REST APIs / Node.js básico
+                <br />
+                Responsive Design / Web Performance / Core Web Vitals
+                <br />
+                Figma / Trabajo colaborativo con diseño y producto
               </p>
 
               <div className="section-divider">⸻</div>
-
-              {/* <h2 className="section-title">AGRADECIMIENTOS</h2> */}
 
               <p>
                 Gran parte de este portfolio es trabajo en equipo. Hoy es muy
