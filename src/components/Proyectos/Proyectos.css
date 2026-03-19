@@ -132,7 +132,7 @@
   color: #000000;
   display: inline-block;
   transition: all 0.3s ease;
-  text-align: right;
+  text-align: start;
   max-width: 100%;
   overflow: hidden;
 }
@@ -140,7 +140,6 @@
 .project-link:hover {
   transform: scale(1.05);
 }
-
 
 .project-name {
   font-family: "Playfair Display", serif;
@@ -152,15 +151,16 @@
   line-height: 1;
   letter-spacing: -3px;
   text-transform: uppercase;
-  text-align: right;
+  text-align: start;
   display: block;
   white-space: nowrap;
   max-width: 100%;
 }
 
+/* ↓ único cambio: font-size 11px → 12px y white-space: normal para que el contexto wrappee */
 .project-type {
   font-family: "Cormorant Garamond", serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   color: #000000;
   letter-spacing: 1px;
@@ -168,6 +168,7 @@
   text-transform: uppercase;
   text-align: start;
   line-height: 1.4em;
+  white-space: normal;
 }
 
 /* Sección WORK abajo a la izquierda (más arriba como FRAN {F} en home) */
@@ -334,6 +335,7 @@
 
   .project-type {
     text-align: left;
+    font-size: 11px;
   }
 }
 

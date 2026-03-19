@@ -8,69 +8,78 @@ const proyectosData = [
     description:
       "Portfolio web para artista de serigrafía. Diseño minimalista que destaca el trabajo artístico.",
     url: "https://puri.com.ar/",
-    type: "REACT - Portfolio",
+    type: "REACT · Portfolio",
+    context: "Portfolio para artista de serigrafía",
   },
   {
     name: "TEMISTOCLES",
     description: "Sitio web con sistema de reservas para Cabanas de Esquel.",
     url: "https://temistoclesesquel.com.ar/",
-    type: "REACT - Sitio web",
+    type: "REACT · Sitio web",
+    context: "Sistema de reservas para cabañas en Esquel",
   },
   {
     name: "KILLA",
     description:
-      "Sitio web con sistema de reservas para Cabanas de Tanti Cordoba..",
+      "Sitio web con sistema de reservas para Cabanas de Tanti Cordoba.",
     url: "https://killacabanas.com/",
-    type: "REACT - Sitio web",
+    type: "REACT · Sitio web",
+    context: "Sistema de reservas para cabañas en Tanti, Córdoba",
   },
   {
     name: "SILVESTRE",
     description:
-      "Landing page para una marca de Dulce de leche artesanal, con diseno moderno, responsive y funcional.",
+      "Landing page para una marca de Dulce de leche artesanal, con diseño moderno, responsive y funcional.",
     url: "https://silvestreddl.com/",
-    type: "REACT - Landing Page",
+    type: "REACT · Landing Page",
+    context: "Landing page para marca de dulce de leche artesanal",
   },
   {
     name: "MAMPATICA",
     description: "Sitio web con sistema de reservas para Cabanas de Mampatica.",
     url: "https://mampatica.com.ar/",
-    type: "REACT - Sitio web",
+    type: "REACT · Sitio web",
+    context: "Sistema de reservas para complejo de cabañas",
   },
   {
     name: "FEDE R.",
     description:
       "Portfolio audiovisual. Showcase de trabajos creativos con diseño impactante.",
     url: "https://federementeria.com/",
-    type: "React - Portfolio",
+    type: "REACT · Portfolio",
+    context: "Portfolio audiovisual para director creativo",
   },
   {
     name: "SKY",
     description:
       "Sitio web para complejo turístico. Experiencia visual inmersiva.",
     url: "https://skylasgrutas.com/",
-    type: "REACT sitio web",
+    type: "REACT · Sitio web",
+    context: "Sitio para complejo turístico en Las Grutas",
   },
   {
     name: "MENTA&LIMON",
     description:
       "Landing page para banda de cumbia. Enfoque en conversión y experiencia de usuario.",
     url: "https://www.mentaylimoncumbia.com/",
-    type: "React - Landing Page",
+    type: "REACT · Landing Page",
+    context: "Landing page para banda de cumbia",
   },
   {
     name: "BOMBICINO",
     description:
       "Sitio web para centro de diagnóstico médico. Diseño profesional y confiable.",
     url: "https://www.bombicino.com.ar/",
-    type: "React - Sitio web",
+    type: "REACT · Sitio web",
+    context: "Sitio para centro de diagnóstico médico",
   },
-
   {
     name: "PALADAR SALUDABLE",
     description:
       "Landing page para servicio de alimentación saludable. Enfoque en conversión y experiencia de usuario.",
     url: "https://paladarsaludable.com.ar/",
-    type: "REACT - Landing Page",
+    type: "REACT · Landing Page",
+    context: "Landing page para servicio de alimentación saludable",
   },
 ];
 
@@ -85,18 +94,19 @@ const Proyectos = () => {
       {/* Copyright vertical abajo izquierda */}
       <div className="copyright">© {new Date().getFullYear()}</div>
 
-      {/* Sección WORK abajo a la izquierda (siempre visible) */}
+      {/* Sección WORK abajo a la izquierda */}
       <div className="work-section">
         <h2 className="work-title">PROJECTS</h2>
         <div className="work-description">
           <p>
-            Esta es una muestra de mi mejor trabajo en una variedad de campos
-            incluyendo Diseño Web, Desarrollo Frontend, Diseño de Producto y
-            Desarrollo de Aplicaciones.
+            Sitios web, landing pages y aplicaciones frontend desarrollados
+            desde cero — del mockup al deploy. Cada proyecto con stack propio,
+            diseño a medida y foco en performance.
           </p>
           <p>
-            El mundo del diseño digital y desarrollo está en constante evolución
-            y así ha evolucionado mi rol a lo largo de mi carrera.
+            El desarrollo digital está en constante evolución y así ha
+            evolucionado mi forma de encarar cada proyecto a lo largo de mi
+            carrera.
           </p>
         </div>
       </div>
@@ -113,7 +123,9 @@ const Proyectos = () => {
                 className="project-link"
               >
                 <h3 className="project-name">{proyecto.name}</h3>
-                <p className="project-type">- {proyecto.type}</p>
+                <p className="project-type">
+                  - {proyecto.type} &nbsp;·&nbsp; {proyecto.context}
+                </p>
               </a>
             </div>
           ))}
