@@ -10,7 +10,10 @@
   gap: 40px;
 }
 
-/* Iconos sociales arriba a la izquierda (dentro de la línea) */
+/* =====================
+   SOCIAL ICONS
+   ===================== */
+
 .top-social-icons {
   position: absolute;
   top: 40px;
@@ -40,48 +43,88 @@
   margin-top: 8px;
 }
 
-/* Card promocional arriba a la derecha */
+/* =====================
+   PROMO CARD
+   ===================== */
+
 .promo-card {
   position: absolute;
   top: 40px;
   right: 60px;
-  width: 240px;
-  background: var(--bg-color);
+  width: 220px;
+  background-color: var(--bg-color);
   border: 1px solid #000000;
   border-radius: 8px;
-  padding: 16px;
+  padding: 16px 20px;
   z-index: 10;
 }
 
 .promo-content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 6px;
 }
 
-.promo-text h3 {
+.promo-title {
   font-family: "Playfair Display", serif;
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
   color: #000000;
-  margin-bottom: 6px;
+  margin: 0;
+  letter-spacing: 0.5px;
 }
 
-.promo-text p {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 0.85rem;
-  color: #2a2a2a;
-  margin-bottom: 4px;
-}
-
-.promo-price {
+.promo-subtitle {
   font-family: "Cormorant Garamond", serif;
   font-size: 0.8rem;
   color: #000000;
-  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.3px;
 }
 
-/* Navegación grande del centro hacia la derecha */
+.promo-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.promo-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #000000;
+  display: inline-block;
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+.promo-label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+/* =====================
+   NAVEGACIÓN
+   ===================== */
+
 .main-navigation {
   grid-column: 2;
   grid-row: 2;
@@ -110,10 +153,12 @@
 
 .nav-link:hover {
   transform: scale(1.05);
-  /* font-style: italic; */
 }
 
-/* Información personal abajo a la izquierda */
+/* =====================
+   PERSONAL INFO
+   ===================== */
+
 .personal-info {
   grid-column: 1;
   grid-row: 2;
@@ -141,25 +186,38 @@
 }
 
 .professional-description {
-  font-family: "Cormorant Garamond", serif !important;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1rem;
   color: #2a2a2a;
   line-height: 1.6;
   font-weight: 400;
 }
 
-.professional-description p {
-  margin-bottom: 12px;
+.desc-role {
+  font-family: "Cormorant Garamond", serif;
   font-size: 1rem;
-  color: #2a2a2a;
-  font-family: "Cormorant Garamond", serif !important;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+  line-height: 1.4;
 }
 
-.professional-description p:last-child {
-  margin-bottom: 0;
+.desc-availability {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.9rem;
+  color: #555555;
+  margin: 0;
+  letter-spacing: 0.3px;
 }
 
-/* Copyright */
+/* =====================
+   COPYRIGHT
+   ===================== */
+
 .copyright {
   position: fixed;
   left: 20px;
@@ -174,7 +232,10 @@
   letter-spacing: 1px;
 }
 
-/* Responsive */
+/* =====================
+   RESPONSIVE
+   ===================== */
+
 @media (max-width: 1200px) {
   .home-container {
     padding: 100px 40px 40px 40px;
@@ -183,8 +244,6 @@
   .promo-card {
     top: 30px;
     right: 40px;
-    width: 220px;
-    padding: 14px;
   }
 
   .main-navigation {
@@ -216,8 +275,6 @@
 
   .top-social-icons {
     position: static;
-    top: auto;
-    left: auto;
     flex-direction: row;
     gap: 20px;
     margin-bottom: 0;
@@ -259,8 +316,6 @@
 
   .promo-card {
     position: static;
-    top: auto;
-    right: auto;
     width: 100%;
     max-width: 280px;
     grid-column: 1;
@@ -300,26 +355,9 @@
   }
 
   .promo-card {
-    position: static;
-    top: auto;
-    right: auto;
     padding: 14px;
-    width: 100%;
     max-width: 260px;
     margin-top: 20px;
-  }
-
-  .promo-text h3 {
-    font-size: 1rem;
-    margin-bottom: 4px;
-  }
-
-  .promo-text p {
-    font-size: 0.8rem;
-  }
-
-  .promo-price {
-    font-size: 0.75rem;
   }
 
   .nav-link {
@@ -331,13 +369,12 @@
     margin-bottom: 16px;
   }
 
-  .professional-description {
+  .desc-role {
     font-size: 0.95rem;
   }
 
-  .professional-description p {
-    font-size: 0.95rem;
-    margin-bottom: 10px;
+  .desc-availability {
+    font-size: 0.85rem;
   }
 
   .copyright {

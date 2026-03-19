@@ -1,17 +1,19 @@
+/* =====================
+   CONTACT SECTION
+   ===================== */
+
 .contact-section {
   min-height: 100vh;
   width: 100%;
   position: relative;
   background-color: var(--bg-color);
   color: #000000;
-  padding: 100px 60px 60px 60px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Cormorant Garamond", serif;
-  overflow-x: hidden;
   box-sizing: border-box;
+  padding: 100px 60px 60px 60px;
 }
 
 /* Botón HOME arriba - fijo */
@@ -32,7 +34,6 @@
   letter-spacing: 1px;
 }
 
-/* Línea después de HOME en desktop */
 @media (min-width: 901px) {
   .home-link::after {
     content: "";
@@ -45,7 +46,6 @@
     background-color: #000000;
   }
 
-  /* Línea vertical debajo de HOME */
   .home-link::before {
     content: "";
     position: absolute;
@@ -78,117 +78,152 @@
   letter-spacing: 1px;
 }
 
-/* Contenedor principal - centrado */
+/* =====================
+   CONTAINER
+   ===================== */
+
 .contact-container {
-  grid-column: 1;
-  grid-row: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 60px;
+  gap: 32px;
+  max-width: 600px;
   width: 100%;
-  box-sizing: border-box;
 }
 
-/* Título */
+/* =====================
+   DISPONIBILIDAD
+   ===================== */
+
+.contact-availability {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.availability-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+  display: inline-block;
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+/* =====================
+   TÍTULO Y DESCRIPCIÓN
+   ===================== */
+
 .contact-title {
   font-family: "Playfair Display", serif;
-  font-size: clamp(4rem, 8vw, 12rem);
+  font-size: clamp(3.5rem, 8vw, 6rem);
   font-weight: 400;
   color: #000000;
-  text-align: left;
-  margin: 0 0 24px 0;
+  margin: 0;
+  line-height: 1;
   letter-spacing: -2px;
-  line-height: 1.1;
 }
 
-/* Descripción */
 .contact-description {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.15rem;
-  color: #000000;
-  text-align: left;
-  line-height: 1.7;
-  margin: 0 0 40px 0;
-  max-width: 100%;
-  font-weight: 400;
-}
-
-/* Información de contacto */
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
-
-.contact-line {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.1rem;
   color: #000000;
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
 }
 
-.contact-label {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #000000;
+/* =====================
+   GRUPOS DE CONTACTO
+   ===================== */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-group-label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888888;
+}
+
+.contact-group-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* =====================
+   LINKS
+   ===================== */
 
 .contact-link {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #000000;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: opacity 0.3s ease;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+  display: inline-block;
 }
 
 .contact-link:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
-/* Responsive */
-@media (max-width: 1200px) {
-  .contact-section {
-    padding: 100px 40px 40px 40px;
-  }
-
-  .contact-container {
-    padding-left: 40px;
-    max-width: 700px;
-  }
-
-  .contact-title {
-    font-size: clamp(3.5rem, 7vw, 9rem);
-  }
+/* Links principales: WhatsApp y Email */
+.contact-link--primary {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0;
 }
+
+/* =====================
+   RESPONSIVE
+   ===================== */
 
 @media (max-width: 900px) {
   .contact-section {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    align-items: flex-start;
     padding: 60px 30px 30px 30px;
-    gap: 40px;
   }
 
   .home-link {
     position: static;
     transform: none;
-    top: auto;
-    left: auto;
-    margin-bottom: 0;
+    display: inline-block;
     font-size: 1rem;
     letter-spacing: 0;
-    display: inline-block;
-    grid-column: 1;
-    grid-row: 1;
-    order: 1;
+    margin-bottom: 40px;
   }
 
   .home-link::after {
@@ -201,79 +236,37 @@
     vertical-align: middle;
   }
 
+  .home-link::before {
+    display: none;
+  }
+
   .copyright {
     display: none;
   }
 
   .contact-container {
-    grid-column: 1;
-    grid-row: 2;
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 100%;
-    order: 2;
+    gap: 28px;
   }
 
   .contact-title {
-    font-size: clamp(3rem, 8vw, 5rem);
-    text-align: left;
-  }
-
-  .contact-description {
-    font-size: 1rem;
-  }
-
-  .contact-line {
-    font-size: 1rem;
-  }
-
-  .contact-label {
-    font-size: 1rem;
-  }
-
-  .contact-link {
-    font-size: 1rem;
+    font-size: clamp(2.8rem, 10vw, 4rem);
   }
 }
 
 @media (max-width: 600px) {
   .contact-section {
     padding: 50px 20px 20px 20px;
-    gap: 35px;
-  }
-
-  .home-link {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-
-  .home-link::after {
-    width: 30px;
-    margin-left: 12px;
-  }
-
-  .contact-container {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .contact-title {
-    font-size: clamp(2.5rem, 7vw, 4rem);
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
   }
 
   .contact-description {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
-  .contact-line {
-    font-size: 0.95rem;
-  }
-
-  .contact-label {
-    font-size: 0.95rem;
-  }
-
-  .contact-link {
-    font-size: 0.95rem;
+  .contact-link--primary {
+    font-size: 1.1rem;
   }
 }
